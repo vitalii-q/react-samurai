@@ -1,0 +1,82 @@
+/* Block 7f */
+/* ======================== */
+
+.uou-block-7f {
+  .clearfix();
+  position: relative;
+  display: block;
+  margin-bottom: @uou-grid-space;
+  padding-bottom: @uou-grid-space;
+  font-size: @uou-font-size-small;
+
+
+  &:last-child {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border-bottom: 0;
+  }
+
+  .thumb {
+    width: 250px;
+    height: auto;
+    float: left;
+    margin-right: @uou-grid-space;
+    border-radius: 4px;
+  }
+
+  h1 {
+    margin-top: @uou-line-height / 2;
+    font-size: @uou-font-size-h5;
+
+    a {
+      color: @uou-secondary-color;
+
+      &:hover {
+        color: @uou-primary-color;
+      }
+    }
+  }
+
+  a.btn {
+    text-transform: capitalize;
+    padding: 6px 8px;
+  }
+
+  .meta {
+    text-transform: uppercase;
+    color: @uou-text-color-light;
+    font-size: round(@uou-font-size * .777);
+    font-family: @uou-font-family-sb;
+
+    a {
+      color: inherit;
+
+      &:hover {
+        color: @uou-primary-color;
+      }
+    }
+
+    span {
+      &:after {
+        content: '\2022';
+        margin: 0 10px;
+      }
+
+      &:last-child {
+        &:after {
+          display: none;
+        }
+      }
+    }
+  }
+
+  @media (max-width: @screen-xs-max) {
+    .thumb {
+      width: 100%;
+      height: auto;
+      float: none;
+      margin-right: 0;
+      margin-bottom: @uou-line-height;
+    }
+  }
+}

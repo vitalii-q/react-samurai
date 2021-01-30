@@ -1,0 +1,70 @@
+.uou-service-square {
+  position: relative;
+  padding: 50px 0;
+}
+
+
+
+.uou-block-service-new {
+  position: relative;
+  .text-center;
+  padding: 20px 20px;
+  border: 2px solid @uou-text-color-lighter;
+  height: 110px;
+  width: 150px;
+  cursor: pointer;
+  margin: 20px auto;
+  border-radius: @uou-border-radius-three;
+
+
+
+  .fa {
+    display: block;
+    font-size: 30px;
+    padding-bottom: 15px;
+  }
+
+  h6 {
+    margin-bottom: 5px;
+    margin-top: 0;
+  }
+
+  p {
+    display: none;
+
+    margin: 0;
+
+  }
+
+  &.active,
+  &:hover {
+    top: -25px;
+    width: 250px;
+    height: 180px;
+    border-color: @uou-primary-color;
+
+    h6 {
+      color: @uou-primary-color;
+      margin-bottom: 20px;
+      margin-top: 10px;
+      .fa {
+        display: inline;
+        padding-right: 15px;
+        font-size: 20px;
+        color: @uou-primary-color;
+      }
+    }
+
+    p {
+      display: block;
+
+
+    }
+
+
+    @media screen and (max-width: @screen-md) {
+        top: 0;
+
+      }
+  }
+}

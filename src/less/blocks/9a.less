@@ -1,0 +1,62 @@
+/* Block 9a */
+/* ======================== */
+
+.uou-block-9a {
+  position: relative;
+  display: block;
+  margin-bottom: @uou-grid-space;
+  font-size: @uou-font-size-small;
+
+  .content {
+    .clearfix();
+    background: @uou-tertiary-color;
+    padding: @uou-line-height;
+
+    .secondary& {
+      background: @uou-secondary-color;
+      color: @uou-text-color-lighter;
+    }
+
+    h4 {
+      font-size: @uou-font-size-h6;
+      margin: 0;
+
+      .secondary& {
+        color: @uou-text-color-inverted;
+      }
+    }
+
+    .stars {
+      color: @uou-text-color-light;
+      margin-bottom: @uou-line-height;
+
+      .secondary& {
+        color: @uou-text-color-lighter;
+      }
+    }
+
+    .price {
+      float: left;
+      display: inline-block;
+      font-size: @uou-font-size * 2;
+      font-weight: 600;
+      color: @uou-secondary-color;
+      line-height: round(@uou-line-height * 1.666);
+      vertical-align: middle;
+
+      .secondary& {
+        color: @uou-text-color-inverted;
+      }
+
+      &:before {
+        content: '$';
+        margin-right: 5px;
+        font-size: round(@uou-font-size * 1.5);
+      }
+    }
+
+    .btn {
+      float: right;
+    }
+  }
+}

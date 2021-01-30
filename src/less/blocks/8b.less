@@ -1,0 +1,49 @@
+/* Block 8b */
+/* ======================== */
+
+.uou-block-8b {
+  .clearfix();
+  position: relative;
+  display: block;
+
+  .list-icon-large {
+    li {
+      display: inline-block;
+      vertical-align: top;
+      width: 33%;
+      margin-bottom: @uou-line-height * 2;
+      margin-left: -5px;
+      padding-right: @uou-line-height;
+
+      &:nth-child(3n) {
+        padding-right: 0;
+      }
+    }
+  }
+
+  @media (max-width: @screen-sm-max) {
+    .list-icon-large {
+      li {
+        width: 49%;
+        padding-right: @uou-line-height;
+
+        &:nth-child(3n) {
+          padding-right: @uou-line-height;
+        }
+      }
+    }
+  }
+
+  @media (max-width: @screen-xs-max) {
+    .list-icon-large {
+      li {
+        width: 100%;
+        padding-right: 0;
+
+        &:nth-child(3n) {
+          padding-right: 0;
+        }
+      }
+    }
+  }
+}

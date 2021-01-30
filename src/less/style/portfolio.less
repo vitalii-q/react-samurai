@@ -1,0 +1,162 @@
+/* PORTFOLIO */
+
+
+.uou-portfolio {
+  position: relative;
+  widht: 100%;
+
+  .portfolio {
+    position: relative;
+    padding: 60px 0 20px;
+
+    .filters {
+      margin-bottom: 50px;
+      text-align: center;
+
+
+      li {
+        display: inline-block;
+
+        a {
+          background-color: transparent;
+          color: @uou-primary-color;
+          border: 1px solid @uou-primary-color;
+          text-transform: capitalize;
+          margin-right: 10px;
+          padding: 6px 15px;
+
+          &:hover,
+          &.active {
+            background-color: @uou-primary-color;
+            color: @uou-text-color-inverted;
+          }
+        }
+
+        @media (max-width: @screen-sm) {
+          display: block;
+          width: 100%;
+
+          a {
+            display: block;
+          }
+        }
+      }
+    }
+
+    .portfolio-filters-content {
+
+      width: 100%;
+      height: 100%;
+
+      article {
+        margin: 0;
+        float: left;
+        width: 33.33%;
+        overflow: hidden;
+
+
+
+
+        a {
+          span {
+
+            visibility: visible;
+            opacity: 0;
+            position: absolute;
+            left: 0;
+            top: 0;
+            z-index: 999;
+            width: 100%;
+            height: 100%;
+            background: fade(@uou-primary-color, 50%);
+            color: @uou-text-color-inverted;
+            padding: 40px;
+            .transition(.3s);
+
+            b.title {
+              position: absolute;
+              top: 70%;
+              font-size: 12px;
+              font-weight: normal;
+
+
+              strong {
+                font-weight: normal;
+
+                display: block;
+                font-size: 16px;
+              }
+            }
+
+
+            .fa {
+              position: absolute;
+              top: 40%;
+              left: 45%;
+              text-align: center;
+              vertical-align: middle;
+              width: 100%;
+              height: 50px;
+              width: 50px;
+              border: 1px solid @uou-text-color-inverted;
+              border-radius: 50%;
+              line-height: 50px;
+              margin: 0 auto;
+            }
+
+
+          }
+        }
+
+        &:hover img {
+          -webkit-transform:scale(1.15);
+          -moz-transform:scale(1.15);
+          transform:scale(1.15);
+
+        }
+
+        &:hover {
+          a {
+            span {
+              visibility: visible;
+              opacity: 1;
+            }
+
+          }
+        }
+
+        img {
+          .transition(all .2s ease-in);
+        }
+
+        @media (max-width: @screen-lg-desktop) {
+          width: 283px;
+        }
+
+        @media (max-width: @screen-desktop) {
+          width: 330px;
+        }
+
+        @media (max-width: @screen-md) {
+          position: relative !important;
+          margin: 0 0 30px 0;
+          width: 100%;
+          left: 0 !important;
+          top: 0 !important;
+
+          img {
+            width: 100%;
+            height: auto;
+          }
+        }
+      }
+
+      @media (max-width: @screen-md) {
+        padding: 0 15px;
+      }
+    }
+  }
+
+}
+
+

@@ -1,0 +1,239 @@
+/* Block 2c */
+/* ======================== */
+
+.uou-block-2c {
+  .clearfix();
+  position: relative;
+  display: block;
+  padding: @uou-line-height 0;
+  font-family: @uou-font-family-sb;
+
+
+  .logo {
+    float: left;
+    display: block;
+    font-size: round(@uou-font-size * 1.75);
+    color: inherit;
+    font-weight: 700;
+    letter-spacing: 2px;
+    line-height: round(@uou-line-height * 1.666);
+
+    &:hover {
+      color: @uou-primary-color;
+    }
+  }
+
+  .mobile-sidebar-button {
+    display: none;
+  }
+
+  .nav {
+    float: right;
+
+    .sf-menu {
+      > li {
+        margin-right: @uou-line-height;
+        padding-right: @uou-line-height;
+        border-right: 1px solid @uou-tertiary-color;
+
+        .icons& {
+          padding-right: 0;
+          border-right: 0;
+          margin-right: round(@uou-line-height * 1.666);
+        }
+
+        &:last-child {
+          margin-right: 0;
+          padding-right: 0;
+          border-right: 0;
+        }
+
+        > a {
+          display: block;
+          color: @uou-text-color;
+          text-transform: uppercase;
+          font-size: round(@uou-font-size * .75);
+          line-height: round(@uou-line-height * .833);
+          font-weight: 600;
+
+          span {
+            display: block;
+            text-transform: none;
+            font-size: round(@uou-font-size-small * .857);
+            font-weight: normal;
+            color: @uou-text-color-light;
+          }
+
+          .icons& {
+            padding-left: round(@uou-font-size * 2.25) + 10;
+
+            .fa {
+              position: absolute;
+              top: 0;
+              left: 0;
+              font-size: round(@uou-font-size * 2.25);
+              line-height: round(@uou-line-height * 1.666);
+              color: @uou-text-color;
+
+              &.fa-envelope,
+              &.fa-shopping-cart {
+                top: -1px;
+              }
+
+              &.fa-home,
+              &.fa-edit {
+                top: 1px;
+              }
+            }
+          }
+        }
+
+        &:hover,
+        &.active,
+        &.sfHover {
+          > a {
+            color: @uou-primary-color;
+
+            .icons& {
+              .fa {
+                color: @uou-primary-color;
+              }
+            }
+          }
+        }
+
+        > ul {
+          padding-top: 10px;
+
+          &:before {
+            position: absolute;
+            top: 5px;
+            left: 10px;
+            content: '';
+            width: 0;
+            height: 0;
+            border-bottom: 5px solid @uou-tertiary-color;
+            border-left: 5px solid transparent;
+            border-right: 5px solid transparent;
+          }
+
+          ul {
+            padding-left: 10px;
+
+            &:before {
+              position: absolute;
+              top: round(@uou-line-height * .416);
+              left: 5px;
+              content: '';
+              width: 0;
+              height: 0;
+              border-top: 5px solid transparent;
+              border-bottom: 5px solid transparent;
+              border-right: 5px solid @uou-tertiary-color;
+            }
+          }
+
+          li {
+            border-bottom: 1px solid darken(@uou-tertiary-color, 5%);
+
+            &:last-child {
+              border-bottom: 0;
+            }
+
+            a {
+              background: @uou-tertiary-color;
+              font-size: @uou-font-size-small;
+              color: inherit;
+              padding: round(@uou-line-height * .125) (@uou-line-height * .625);
+              min-width: 140px;
+            }
+
+            &.active,
+            &:hover {
+              > a {
+                background: @uou-secondary-color;
+                color: @uou-text-color-inverted;
+              }
+            }
+          }
+        }
+      }
+
+      &.sf-arrows {
+        .sf-with-ul {
+          padding-right: @uou-line-height;
+
+          &:after {
+            position: absolute;
+            content: @fa-var-caret-down;
+            font-family: 'FontAwesome';
+            font-size: @uou-font-size-icon;
+            right: 0;
+            top: 10px;
+          }
+        }
+
+        ul {
+          .sf-with-ul {
+            padding-right: round(@uou-line-height * 1.25);
+
+            &:after {
+              content: @fa-var-caret-right;
+              font-family: 'FontAwesome';
+              position: absolute;
+              top: 0;
+              right: 0;
+              margin-left: 0;
+              padding: round(@uou-line-height * .125) 0;
+              text-align: center;
+              width: round(@uou-line-height * 1.25);
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @media (max-width: @screen-md-max) {
+    .nav {
+      .sf-menu {
+        > li {
+          margin-right: round(@uou-line-height * 1.666);
+          padding-right: 0;
+          border-right: 0;
+
+          &:last-child {
+            margin-right: 0;
+            padding-right: 0;
+            border-right: 0;
+          }
+
+          > a {
+            .icons& {
+              padding-left: 0;
+
+              .fa {
+                display: none;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @media (max-width: @screen-sm-max) {
+    .logo {
+      line-height: round(@uou-line-height * 1.666);
+    }
+
+    .mobile-sidebar-button {
+      display: block;
+      float: right;
+    }
+
+    .nav {
+      display: none;
+    }
+  }
+}

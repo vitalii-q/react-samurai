@@ -1,0 +1,138 @@
+.categories {
+	position: relative;
+	padding: 67px 0;
+
+	.category-block {
+		background: #fff;
+		box-shadow: 0 0 3px rgba(206, 206, 206, 0.36);
+
+		@media (max-width: @screen-md) {
+			margin-bottom: 30px;
+		}
+
+		.category-header {
+			position: relative;
+			padding: 25px 0 40px 0;
+			text-align: center;
+
+			h5 {
+				margin: 0;
+				color: #fff;
+			}
+
+			&.header-jobs {
+				background: #00d793 url(../img/category-header-jobs.png) no-repeat top;
+
+				.icon {
+
+					.icon-inner {
+						border-color: @uou-primary-color;
+					}
+				}
+			}
+
+			&.header-business {
+				background: #3399ff url(../img/category-header-business.png) no-repeat top;
+
+				.icon {
+
+					.icon-inner {
+						border-color: #3399ff;
+
+						.fa {
+							color: #3399ff;
+						}
+					}
+				}
+			}
+
+			&.header-restaurant {
+				background: #ff822e url(../img/category-header-restaurant.png) no-repeat top;
+
+				.icon {
+
+					.icon-inner {
+						border-color: #ff822e;
+
+						.fa {
+							color: #ff822e;
+						}
+					}
+				}
+			}
+
+			.icon {
+				position: absolute;
+				bottom: -30px;
+				left: 0;
+				right: 0;
+				margin: 0 auto;
+				width: 60px;
+				height: 60px;
+				display: inline-block;
+				background: #fff;
+				border-radius: 50%;
+				z-index: 99;
+
+				.icon-inner {
+					margin-top: 5px;
+					width: 50px;
+					height: 50px;
+					line-height: 44px;
+					border: 2px solid ;
+					display: inline-block;
+					text-align: center;
+					border-radius: 50%;
+
+					.fa {
+						text-align: center;
+						color: #00d793;
+					}
+				} 
+			}
+		}
+
+		.category-inner {
+			position: relative;
+			padding: 40px 30px 30px 30px;
+
+			ul {
+				margin: 0;
+				padding: 0;
+				list-style: none;
+
+				li {
+					display: block;
+					margin-bottom: 5px;
+
+					.title {
+						line-height: 20px;
+						display: inline-block;
+
+						@media (max-width: @screen-lg) {
+							font-size: 11px;
+						}
+
+						@media (max-width: @screen-md) {
+							font-size: 13px;
+						}
+					}
+
+					.count {
+						display: inline-block;
+						float: right;
+						width: 25px;
+						height: 20px;
+						font-size: 12px;
+						line-height: 20px;
+						text-align: center;
+						color: #fff;
+						background: #c4c4c4;
+						border-radius: 5px;
+						border-radius: 40%;
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,66 @@
+/* Block 3a */
+/* ======================== */
+
+.uou-block-3a {
+  .clearfix();
+  position: relative;
+  display: block;
+  padding: round(@uou-line-height * .541) 0;
+  background: @uou-tertiary-color;
+
+  .secondary& {
+    background: @uou-secondary-color;
+  }
+
+  .breadcrumbs {
+    margin-bottom: 0;
+    display: inline-block;
+    font-size: @uou-font-size-small;
+
+    .secondary& {
+      > li {
+        color: @uou-text-color-inverted;
+
+        &:after {
+          color: @uou-text-color-light;
+        }
+
+        a {
+          color: @uou-text-color-lighter;
+
+          &:hover {
+            color: @uou-primary-color;
+          }
+        }
+      }
+    }
+  }
+
+  .pagination {
+    margin: 0;
+    display: inline-block;
+    float: right;
+
+    li {
+      margin: 0 2px;
+      display: inline-block;
+
+      a {
+        height: 25px;
+        line-height: 25px;
+        border: 1px solid #333;
+        border-radius: 3px;
+        font-size: 12px;
+
+        &:hover {
+          background: #333;
+          color: #fff;
+        }
+      }
+    }
+  }
+
+  @media (max-width: @screen-xs-max) {
+    display: none;
+  }
+}

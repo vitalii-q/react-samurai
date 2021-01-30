@@ -1,0 +1,74 @@
+.uou-progressbar-single {
+  position: relative;
+  width: 100%;
+  padding-bottom: 5px;
+  margin-bottom: 30px;
+
+  h6 {
+    margin-bottom: 0;
+    font-weight: normal;
+    font-size: 14px;
+    margin-top: 0;
+  }
+
+  .main-bar {
+    position: relative;
+    width: 100%;
+    height: 6px;
+    border-radius: 50px;
+    background-color: #eaeaea;
+    display: block;
+    margin: 10px 0;
+
+    b {
+      margin: 0;
+      position: absolute;
+      right: 0;
+      top: -30px;
+    }
+
+    .inner-bar {
+      position: absolute;
+      left: 0;
+      top: 0;
+      height: 100%;
+
+      background-color: @uou-primary-color;
+      z-index: 99;
+      border-radius: 50px;
+
+      &.one {
+        width: 87%;
+      }
+
+      &.two {
+        width: 96%;
+      }
+
+      &.three {
+        width: 78%;
+      }
+
+      &.gradient-one {
+        background: -webkit-linear-gradient(left top, @uou-primary-color-second , @uou-primary-color); /* For Safari 5.1 to 6.0 */
+          background: -o-linear-gradient(left top, @uou-primary-color-second , @uou-primary-color); /* For Opera 11.1 to 12.0 */
+          background: -moz-linear-gradient(left top, @uou-primary-color-second , @uou-primary-color); /* For Firefox 3.6 to 15 */
+          background: linear-gradient(left top, @uou-primary-color-second , @uou-primary-color);
+      }
+
+      &.gradient-two {
+        background: -webkit-linear-gradient(left top, #aa1ed8, @uou-primary-color-second , @uou-primary-color); /* For Safari 5.1 to 6.0 */
+          background: -o-linear-gradient(left top, #aa1ed8, @uou-primary-color-second , @uou-primary-color); /* For Opera 11.1 to 12.0 */
+          background: -moz-linear-gradient(left top, #aa1ed8, @uou-primary-color-second , @uou-primary-color); /* For Firefox 3.6 to 15 */
+          background: linear-gradient(left top, #aa1ed8, @uou-primary-color-second , @uou-primary-color);
+      }
+
+      &.gradient-three {
+        background: -webkit-linear-gradient(left top, #d81716, #60825b , @uou-primary-color); /* For Safari 5.1 to 6.0 */
+          background: -o-linear-gradient(left top, #d81716, #60825b , @uou-primary-color); /* For Opera 11.1 to 12.0 */
+          background: -moz-linear-gradient(left top, #d81716, #60825b , @uou-primary-color); /* For Firefox 3.6 to 15 */
+          background: linear-gradient(left top, #d81716, #60825b , @uou-primary-color);
+      }
+    }
+  }
+}

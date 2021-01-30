@@ -1,0 +1,163 @@
+/* Breadcrumbs */
+/* ======================== */
+
+.breadcrumbs {
+  .clearfix();
+  .list-unstyled();
+  position: relative;
+  margin-bottom: @uou-line-height;
+
+  > li {
+    float: left;
+    color: @uou-secondary-color;
+
+    &:after {
+      content: @fa-var-angle-right;
+      font-family: 'FontAwesome';
+      font-size: @uou-font-size-small;
+      margin: 0 (@uou-line-height / 2);
+      color: @uou-text-color-lighter;
+    }
+
+    &:last-child {
+      &:after {
+        display: none;
+      }
+    }
+
+    a {
+      color: @uou-text-color-lighter;
+
+      &:hover {
+        color: @uou-primary-color;
+      }
+    }
+  }
+}
+
+/* Breadcrumbs Secondary */
+
+.breadcrumbs-secondary {
+  .clearfix();
+  .list-unstyled();
+  position: relative;
+  margin-bottom: @uou-line-height;
+
+  > li {
+    float: left;
+    margin-right: 5px;
+    line-height: round(@uou-line-height * 1.166);
+    font-size: @uou-font-size-small;
+
+    &:first-child {
+      > a,
+      > span {
+        border-left: 1px solid @uou-text-color-lighter;
+        padding-left: @uou-line-height / 2;
+
+        .arrow {
+          display: none;
+        }
+      }
+    }
+
+    > a,
+    > span {
+      position: relative;
+      display: block;
+      padding: 0 (@uou-line-height / 2) 0 @uou-line-height;
+      border-top: 1px solid @uou-text-color-lighter;
+      border-bottom: 1px solid @uou-text-color-lighter;
+
+      &:before,
+      &:after {
+        z-index: 2;
+        position: absolute;
+        display: block;
+        content: '';
+        width: 0;
+        height: 0;
+        transition: all @uou-transition-speed;
+      }
+
+      &:before {
+        top: -1px;
+        right: round(-@uou-line-height * .625);
+        border-top: round(@uou-line-height * .625) solid transparent;
+        border-bottom: round(@uou-line-height * .625) solid transparent;
+        border-left: round(@uou-line-height * .625) solid @uou-text-color-lighter;
+      }
+
+      &:after {
+        top: 0;
+        right: round(-@uou-line-height * .625) + 1;
+        border-top: round(@uou-line-height * .625) - 1 solid transparent;
+        border-bottom: round(@uou-line-height * .625) - 1 solid transparent;
+        border-left: round(@uou-line-height * .625) - 1 solid @uou-background-color;
+      }
+
+      .arrow {
+        position: absolute;
+        z-index: 1;
+        top: -1px;
+        left: 0;
+        width: 0;
+        height: 0;
+        border-top: round(@uou-line-height * .625) solid transparent;
+        border-bottom: round(@uou-line-height * .625) solid transparent;
+        border-left: round(@uou-line-height * .625) solid @uou-text-color-lighter;
+
+        &:before,
+        &:after {
+          position: absolute;
+          display: block;
+          content: '';
+          width: 0;
+          height: 0;
+        }
+
+        &:before {
+          top: round(-@uou-line-height * .625);
+          left: round(-@uou-line-height * .625) - 1;
+          border-bottom: round(@uou-line-height * .625) solid @uou-background-color;
+          border-right: round(@uou-line-height * .625) solid transparent;
+        }
+
+        &:after {
+          bottom: round(-@uou-line-height * .625);
+          left: round(-@uou-line-height * .625) - 1;
+          border-top: round(@uou-line-height * .625) solid @uou-background-color;
+          border-right: round(@uou-line-height * .625) solid transparent;
+        }
+      }
+    }
+
+    > a {
+      color: @uou-text-color-lighter;
+
+      &:hover {
+        border-color: @uou-primary-color;
+        background-color: @uou-primary-color;
+        color: @uou-text-color-inverted;
+
+        &:before,
+        &:after,
+        .arrow {
+          border-left-color: @uou-primary-color;
+        }
+      }
+    }
+
+    > span {
+      border-color:lighten(@uou-secondary-color, 20%);
+      background-color: lighten(@uou-secondary-color, 20%) ;
+      color: @uou-text-color-inverted;
+
+      &:before,
+      &:after,
+      .arrow {
+        border-left-color: lighten(@uou-secondary-color, 20%);
+      }
+    }
+  }
+}

@@ -1,0 +1,65 @@
+.modal {
+  background: fade(@uou-secondary-color, 50%);
+
+  .modal-dialog {
+    margin-top: 64px;
+    border-radius: 0;
+    overflow: auto;
+  }
+
+  .modal-content {
+    border-radius: 0;
+    border: 0;
+
+    .uou-block-3b {
+      padding: @uou-line-height - 20  @uou-line-height;
+    }
+  }
+}
+
+
+@media (min-width: 768px) {
+  .modal-dialog {
+    width: 1170px;
+  }
+}
+
+
+.modal-block-tabs {
+  position: relative;
+
+  .tabs {
+    text-align: center;
+    padding: @uou-line-height - 14 0;
+    background: @uou-tertiary-color;
+
+    li {
+      float: none;
+      display: inline-block;
+
+      a {
+        font-size: 14px;
+        font-weight: 300;
+        border-radius: 20px;
+        padding: 6px @uou-line-height;
+      }
+
+      &.active a {
+        background-color: @uou-primary-color;
+      }
+
+
+    }
+  }
+
+  .uou-tabs .content {
+    border-top: 0;
+    max-height: 300px;
+    overflow: auto;
+
+    > div {
+      background-color: @uou-text-color-inverted;
+    }
+  }
+}
+

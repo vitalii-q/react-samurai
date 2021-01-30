@@ -1,0 +1,69 @@
+/* Block 12b */
+/* ======================== */
+
+.uou-block-12b {
+  .clearfix();
+  position: relative;
+  display: block;
+
+  .map-container {
+    position: relative;
+  }
+
+  .form {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 350px;
+    height: 100%;
+    max-width: 100%;
+    margin: 0;
+    padding: @uou-line-height;
+    background: fadeout(@uou-secondary-color, 25%);
+
+    h6 {
+      color: @uou-text-color-inverted;
+      margin-top: 0;
+    }
+
+    select,
+    input[type="text"] {
+      background: fadeout(@uou-secondary-color, 25%);
+      border-color: @uou-text-color-lighter;
+      color: @uou-text-color-inverted;
+
+      &:focus {
+        background: @uou-secondary-color;
+        border-color: @uou-text-color-inverted;
+      }
+
+      .uou-placeholder(@uou-text-color-lighter);
+    }
+
+    .btn {
+      display: block;
+      width: 100%;
+    }
+
+    .uou-rangeslider {
+      .rangeslider,
+      .rangeslider__fill {
+        background: @uou-text-color-lighter;
+      }
+
+      .rangeslider__fill {
+        background: @uou-tertiary-color;
+      }
+    }
+  }
+
+  @media (max-width: @screen-xs-max) {
+    .form {
+      position: relative;
+      top: auto;
+      right: auto;
+      width: 100%;
+      background: @uou-secondary-color;
+    }
+  }
+}

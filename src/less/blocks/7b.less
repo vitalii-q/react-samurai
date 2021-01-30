@@ -1,0 +1,53 @@
+/* Block 7b */
+/* ======================== */
+
+.uou-block-7b {
+  .clearfix();
+  position: relative;
+  display: block;
+
+  .css-table-cell {
+    width: 50%;
+  }
+
+  .content {
+    padding: @uou-line-height * 2;
+    background: @uou-tertiary-color;
+    text-align: center;
+    font-size: @uou-font-size-small;
+
+    .secondary& {
+      background: @uou-secondary-color;
+      color: @uou-text-color-inverted;
+    }
+
+    h1 {
+      font-size: @uou-font-size-h5;
+
+      .secondary& {
+        color: @uou-text-color-inverted;
+      }
+    }
+
+    .time-ago {
+      text-transform: uppercase;
+      color: @uou-text-color-light;
+      font-size: round(@uou-font-size * .75);
+
+      .secondary& {
+        color: @uou-text-color-lighter;
+      }
+    }
+  }
+
+  @media (max-width: @screen-xs-max) {
+    .css-table-cell {
+      display: block;
+      width: 100%;
+    }
+
+    .image {
+      min-height: 250px;
+    }
+  }
+}

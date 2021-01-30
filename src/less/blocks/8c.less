@@ -1,0 +1,43 @@
+/* Block 8c */
+/* ======================== */
+
+.uou-block-8c {
+  .clearfix();
+  position: relative;
+  display: block;
+
+  .css-table-cell {
+    width: 50%;
+  }
+
+  .image {
+    text-align: center;
+  }
+
+  .content {
+    padding: 0 (@uou-line-height * 2);
+    font-size: @uou-font-size-small;
+
+    h3 {
+      font-size: @uou-font-size-h5;
+    }
+  }
+
+  @media (max-width: @screen-md-max) {
+    .content {
+      width: 60%;
+    }
+
+    .image {
+      width: 40%;
+    }
+  }
+
+  @media (max-width: @screen-sm-max) {
+    .css-table-cell {
+      display: block;
+      width: 100%;
+      padding: 0;
+    }
+  }
+}

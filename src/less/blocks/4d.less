@@ -1,0 +1,96 @@
+/* Block 4d */
+/* ======================== */
+
+.uou-block-4d {
+  .clearfix();
+  position: relative;
+  display: block;
+  padding: round(@uou-line-height * 2) 0;
+  background: @uou-tertiary-color;
+  color: @uou-text-color-light;
+  font-size: @uou-font-size-small;
+
+  .secondary& {
+    background: @uou-secondary-color;
+
+    p {
+      color: darken(@uou-background-color, 25%);
+
+    }
+
+    .links {
+      a {
+        color: darken(@uou-background-color, 25%);
+      }
+    }
+  }
+
+  .logo {
+    display: block;
+    font-size: round(@uou-font-size * 1.75);
+    color: @uou-secondary-color;
+    font-weight: 700;
+    letter-spacing: 2px;
+    line-height: round(@uou-line-height * 1.25);
+
+    .secondary& {
+      color: @uou-text-color-inverted;
+    }
+
+    &:hover {
+      color: @uou-primary-color;
+    }
+  }
+
+  h5 {
+    margin-top: 5px;
+    line-height: round(@uou-line-height * 1.25);
+    font-size: 18px;
+    .text-uppercase;
+
+    .secondary& {
+      color: @uou-text-color-inverted;
+    }
+  }
+
+  .links {
+    .list-unstyled();
+
+    > li {
+      > a {
+        color: inherit;
+
+        &:hover {
+          color: @uou-primary-color;
+        }
+      }
+    }
+  }
+
+  .newsletter-form {
+    margin: @uou-line-height 0 0 0;
+
+    input[type="email"] {
+      background: none;
+      margin-bottom: @uou-line-height / 2;
+      border-radius: @uou-border-radius-three;
+
+      .secondary& {
+        border-color: @uou-text-color-lighter;
+        color: @uou-text-color-inverted;
+      }
+
+      &:focus {
+        .secondary& {
+          border-color: @uou-text-color-inverted;
+        }
+      }
+    }
+  }
+
+  @media (max-width: @screen-xs-max) {
+    h5 {
+      margin-top: 0;
+    }
+  }
+}

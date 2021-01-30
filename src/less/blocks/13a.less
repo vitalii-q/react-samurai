@@ -1,0 +1,98 @@
+/* Block 13a */
+/* ======================== */
+
+.uou-block-13a {
+  position: relative;
+  display: block;
+  background: @uou-tertiary-color;
+
+  .secondary& {
+    background: @uou-secondary-color;
+  }
+
+  h5 {
+    margin: 0;
+    padding: (@uou-line-height / 2) @uou-line-height;
+    font-size: @uou-font-size-h6;
+    background: @uou-secondary-color;
+    color: @uou-text-color-inverted;
+    text-align: center;
+
+    .secondary& {
+      background: darken(@uou-secondary-color, 7.5%);
+    }
+  }
+
+  .btn {
+    display: block;
+    text-transform: uppercase;
+    font-size: @uou-font-size-small;
+  }
+
+  > ul {
+    .list-unstyled();
+    margin: 0;
+
+    > li {
+      position: relative;
+      padding: (@uou-line-height / 2) @uou-line-height;
+      padding-left: 50px + @uou-line-height;
+      min-height: 50px + @uou-line-height;
+      border-bottom: 1px solid @uou-tertiary-color-hover;
+
+      &:last-child {
+        border-bottom: 0;
+      }
+
+      .secondary& {
+        border-bottom-color: darken(@uou-secondary-color, 7.5%);
+      }
+
+      img {
+        position: absolute;
+        top: 50%;
+        left: @uou-line-height / 2;
+        width: 50px;
+        height: 50px;
+        margin-top: -25px;
+        border-radius: 50%;
+      }
+
+      h6 {
+        margin: 0;
+        line-height: @uou-line-height;
+
+        .secondary& {
+          color: @uou-text-color-inverted;
+        }
+
+        a {
+          color: inherit;
+
+          &:hover {
+            color: @uou-primary-color;
+          }
+        }
+      }
+
+      .stars {
+        color: @uou-text-color-light;
+
+        .secondary& {
+          color: @uou-text-color-lighter;
+        }
+      }
+
+      .date {
+        display: block;
+        text-transform: uppercase;
+        color: @uou-text-color-light;
+        font-size: round(@uou-font-size * .75);
+
+        .secondary& {
+          color: @uou-text-color-lighter;
+        }
+      }
+    }
+  }
+}

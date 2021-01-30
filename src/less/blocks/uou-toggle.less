@@ -1,0 +1,75 @@
+.uou-toggle-content {
+  position: relative;
+
+  .content-hidden {
+    padding-left: 50px;
+  }
+
+  .content-main {
+    position: relative;
+
+    margin-bottom: 40px;
+  }
+
+  h6 {
+    position: relative;
+    padding-left: 50px;
+    margin-bottom: 10px;
+
+    a {
+
+      height: 35px;
+      width: 35px;
+
+      display: block;
+      color: @uou-text-color-lighter;
+      line-height: 35px;
+      .text-center;
+      border-radius: 3px;
+      position: absolute;
+      left: 0;
+      top: -8px;
+      border: 1px solid @uou-text-color-lighter;
+
+      &:before {
+        content: "\f067";
+        font-family: 'FontAwesome';
+        text-align: center;
+
+      }
+
+
+
+      &.active {
+        background: @uou-primary-color;
+        border-color: @uou-primary-color;
+        color: @uou-text-color-inverted;
+
+        &:before {
+          content: "\f068";
+          font-family: 'FontAwesome';
+          text-align: center;
+
+        }
+      }
+
+    }
+  }
+
+
+  .content-hidden {
+    position: relative;
+    visibility: visible;
+    opacity: 0;
+    transition: all .3s ease;
+    display: none;
+
+    &.active {
+      visibility: visible;
+      opacity:1;
+      display: block;
+
+    }
+  }
+
+}

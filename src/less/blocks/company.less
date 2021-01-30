@@ -1,0 +1,1021 @@
+.company-banner {
+	padding: 160px 0 150px 0;
+
+	h3 {
+		margin: 0 0 56px 0;
+		font-size: 48px;
+		text-transform: uppercase;
+		color: #fff;
+
+		@media (max-width: @screen-xs) {
+			font-size: 36px;
+		}
+	}
+
+	.btn {
+		padding: 11px 28px;
+		margin-bottom: 10px;
+		margin-right: 15px;
+		font-size: 14px;
+		border-color: #fff;
+		color: #fff;
+
+		&:hover {
+			background: #fff;
+			color: #666;
+		}
+	}
+}
+
+.company-content {
+	padding: 55px 0 85px 0;
+
+	.sidebar {
+		position: relative;
+		display: inline-block;
+		width: 100%;
+		background: #fff;
+		box-shadow: 0 0 3px rgba(206, 206, 206, 0.36);
+
+		@media(max-width: @screen-md) {
+			margin-bottom: 30px;
+		}
+
+		.sidebar-fields {
+			position: relative;
+			padding: 28px 22px 18px 22px;
+
+			.location {
+				position: relative;
+
+				.fa {
+					position: absolute;
+					left: 11px;
+					top: 11px;
+					color: #999;
+					z-index: 99;
+				}
+				
+				input {
+					padding-left: 25px;
+				}
+			}
+
+			input {
+				position: relative;
+				margin-bottom: 10px;
+			}
+
+			.custom-select-box {
+				margin-bottom: 10px;
+			}
+		}
+
+		.sidebar-categories {
+			position: relative;
+			padding: 5px 22px 18px 22px;
+			border-top: 1px solid #e8e8e8;
+
+			h6 {
+				margin: 20px 0;
+				font-size: 17px;
+			}
+
+			ul {
+				margin: 0;
+				padding: 0;
+				list-style: none;
+
+				li {
+					display: block;
+					margin-bottom: 5px;
+
+					input {
+						margin-top: 7px;
+						margin-right: 5px;
+						display: inline-block;
+						vertical-align: top;
+					}
+
+					.title {
+						line-height: 20px;
+						display: inline-block;
+
+						@media (max-width: @screen-lg) {
+							font-size: 11px;
+						}
+
+						@media (max-width: @screen-md) {
+							font-size: 13px;
+						}
+					}
+
+					.count {
+						display: inline-block;
+						float: right;
+						width: 25px;
+						height: 20px;
+						font-size: 12px;
+						line-height: 20px;
+						text-align: center;
+						color: #fff;
+						background: #c4c4c4;
+						border-radius: 5px;
+						border-radius: 40%;
+					}
+				}
+			}
+		}
+
+		.sidebar-scrollbars {
+			padding: 5px 22px 15px 22px;
+			border-top: 1px solid #e8e8e8;
+
+			h6 {
+				margin: 20px 0;
+				font-size: 17px;
+			}
+
+			.slider-range {
+			    display: block;
+			    position: relative;
+			    margin: 10px 0 5px 0;
+			    height: 8px;
+			    line-height: 1px;
+			    background: #eaf8f4;
+			    border-radius: 8px;
+
+			    .ui-slider-range {
+				    display: block;
+				    position: absolute;
+				    top: 0;
+				    height: 8px;
+				    line-height: 1px;
+				    background: #00d793;
+    			}
+
+    			.ui-slider-handle {
+				    display: block;
+				    position: absolute;
+				    margin-left: -1px;
+				    width: 19px;
+				    height: 19px;
+				    top: -5px;
+				    border: 6px solid #e8e8e8;
+				    background: #999;
+				    border-radius: 50%;
+				    .transition(.0s);
+
+				    &:last-child {
+    					margin-left: -18px;
+    				}
+				}
+			}
+
+			.range-from {
+				padding: 0;
+				margin: 0 0 0 -5px;
+				display: inline-block;
+				border: none;
+				font-size: 12px;
+				color: #666;
+				width: 50px;
+				height: 20px;
+				background: transparent;
+			}
+
+			.range-to {
+				padding: 0;
+				margin: 0;
+				display: inline-block;
+				float: right;
+				border: none;
+				text-align: right;
+				width: 50px;
+				height: 20px;
+				font-size: 12px;
+				color: #666;
+				background: transparent;
+			}
+		}
+
+		.sidebar-button {
+			position: relative;
+			padding: 15px 22px 30px 22px;
+
+			.btn-medium.full-width {
+				padding-top: 4px;
+				width: 100%;
+				color: #fff;
+				font-weight: bold;
+				font-size: 12px;
+				text-transform: uppercase;
+				border-radius: 3px;
+			}
+		}
+	}
+
+	.header-listing {
+		padding: 13px 20px;
+		margin-bottom: 30px;
+		width: 100%;
+		display: inline-block;
+		background: #fff;
+		box-shadow: 0 0 3px rgba(206, 206, 206, 0.36);
+
+		@media (max-width: @screen-xs) {
+			text-align: center;
+		}
+
+		h6 {
+		    margin: 10px 5px 5px 0;
+		    display: inline-block;
+		    font-size: 14px;
+		    vertical-align: top;
+		    text-transform: uppercase;
+		}
+
+		.custom-select-box {
+			width: 220px;
+			display: inline-block;
+		}
+
+		.listing-views {
+			padding: 0;
+			margin: 4px 0 0 0;
+			float: right;
+			list-style: none;
+			display: inline-block;
+
+			@media (max-width: @screen-xs) {
+				margin-top: 5px;
+				float: none;
+				width: 100%;
+				display: block;
+			}
+
+			li {
+				margin-left: 2px;
+				display: inline-block;
+				width: 27px;
+				height: 27px;
+				text-align: center;
+				line-height: 27px;
+				border: 1px solid #e6e6e6;
+				border-radius: 3px;
+
+				.fa {
+					color: #e6e6e6;
+				}
+
+				&.active {
+					background: @uou-primary-color;
+					border: 1px solid @uou-primary-color;
+
+					.fa {
+						color: #fff;
+					}
+				}
+			}
+		}
+	}
+
+	.listing {
+		padding-bottom: 0;
+
+		.listing-ver-3 {
+			margin-bottom: 30px;
+
+			.listing-inner {
+
+				.listing-content {
+
+					.location {
+						display: inline-block;
+					}
+
+					.type-work {
+						margin-left: 5px;
+						padding-left: 9px;
+						border-left: 1px solid #666;
+						display: inline-block;
+						color: #666666;
+						font-size: 15px;
+					    font-family: 'Montserrat', sans-serif;
+					    font-weight: 400;
+					    line-height: 1.25em;
+
+					    &.full-time {
+					    	color: #cc66cc;
+					    }
+					}
+				}
+			}
+		}
+	}
+
+	.pagination {
+		margin: 0;
+		display: inline-block;
+		text-align: center;
+
+		li {
+			border: 1px solid transparent;
+
+			&.current {
+				background: #fff;
+				border: 1px solid #d6d6d6;
+				border-radius: 3px;
+			}
+
+			a {
+				border-radius: 3px;
+			}
+		}
+	}
+}
+
+.profile-company-content {
+	position: relative;
+	padding: 60px 0 70px 0;
+
+	.nav-tabs {
+		position: absolute;
+		top: -102px;
+		padding: 0;
+		margin: 0;
+		list-style-type: none;
+
+		li {
+			margin-right: 3px;
+			display: inline-block;
+
+			&.active {
+
+				a {
+					background: @uou-primary-color;
+					color: #fff;
+				}
+			}
+
+			a {
+				padding: 9px 10px;
+				display: inline-block;
+				text-align: center;
+				min-width: 112px;
+				background: #fff;
+				color: #666666;
+				text-transform: uppercase;
+				font-size: 14px;
+				border-top-left-radius: 3px;
+				border-top-right-radius: 3px;
+
+				&:hover {
+					background: @uou-primary-color;
+					color: #fff;
+				}
+			}
+		}
+	}
+
+	.sidebar {
+		position: relative;
+		padding: 21px;
+		display: inline-block;
+		width: 100%;
+		background: #fff;
+		box-shadow: 0 0 3px rgba(206, 206, 206, 0.36);
+
+		@media(max-width: @screen-md) {
+			margin-bottom: 30px;
+		}
+
+		.sidebar-thumbnail {
+			margin: 0 auto 30px auto;
+			padding: 4px;
+			text-align: center;
+			border: 1px solid #eaeaea;
+
+			img {
+				margin: 0 auto;
+				display: inline-block;
+				max-width: 100%;
+				height: auto;
+			}
+		}
+
+		.sidebar-information {
+			position: relative;
+
+			.main-title {
+				margin: 0;
+				padding-bottom: 13px;
+				font-size: 17px;
+				border-bottom: 1px solid #ccc;
+			}
+
+			.single-category {
+				position: relative;
+
+				.title {
+					margin: 25px 0 5px 0;
+					font-size: 15px;
+				}
+
+				.subtitle {
+					display: block;
+					color: #999999;
+				}
+
+				.social {
+					padding: 5px 0 0 0;
+					margin: 0;
+					list-style: none;
+
+					li {
+						margin-bottom: 5px;
+						margin-right: 3px;
+						display: inline-block;
+
+						&.twitter {
+
+							a {
+								background: #1bb2e9;
+							}
+						}
+
+						&.facebook {
+
+							a {
+								background: #3c599f;
+							}
+						}
+
+						&.google-plus {
+
+							a {
+								background: #df4b38;
+							}
+						}
+
+						&.linkedin {
+
+							a {
+								background: #4d7abc;
+							}
+						}
+
+						&.pinterest {
+
+							a {
+								background: #cb2027;
+							}
+						}
+
+						&.envelope {
+
+							a {
+								background: #999999;
+							}
+						}
+
+						a {
+							display: inline-block;
+							width: 29px;
+							height: 29px;
+							line-height: 29px;
+							text-align: center;
+							color: #fff;
+							border-radius: 50%;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.tab-content {
+
+		.tab-pane {
+			display: none;
+
+			&.active {
+				display: inline-block;
+				width: 100%;
+			}
+		}
+
+		h3 {
+			padding-top: 50px;
+			margin: 0 0 30px 0;
+			font-size: 23px;
+		}
+
+		.uou-icon-counter {
+			margin-top: 20px;
+
+			.fa {
+				font-size: 60px;
+			}
+		}
+
+		.header-listing {
+			padding: 13px 20px;
+			margin-bottom: 30px;
+			width: 100%;
+			display: inline-block;
+			background: #fff;
+			box-shadow: 0 0 3px rgba(206, 206, 206, 0.36);
+
+			@media (max-width: @screen-xs) {
+				text-align: center;
+			}
+
+			h6 {
+			    margin: 10px 5px 5px 0;
+			    display: inline-block;
+			    font-size: 14px;
+			    vertical-align: top;
+			    text-transform: uppercase;
+			}
+
+			.custom-select-box {
+				width: 220px;
+				display: inline-block;
+			}
+
+			.listing-views {
+				padding: 0;
+				margin: 4px 0 0 0;
+				float: right;
+				list-style: none;
+				display: inline-block;
+
+				select {
+					width: 170px;
+				}
+
+				@media (max-width: @screen-xs) {
+					margin-top: 5px;
+					float: none;
+					width: 100%;
+					display: block;
+				}
+
+				li {
+					margin-left: 2px;
+					display: inline-block;
+					width: 27px;
+					height: 27px;
+					text-align: center;
+					line-height: 27px;
+					border: 1px solid #e6e6e6;
+					border-radius: 3px;
+
+					.fa {
+						color: #e6e6e6;
+					}
+
+					&.active {
+						background: @uou-primary-color;
+						border: 1px solid @uou-primary-color;
+
+						.fa {
+							color: #fff;
+						}
+					}
+				}
+			}
+		}
+
+		.listing-ver-3 {
+			margin-bottom: 30px;
+
+			.listing-inner {
+
+				.listing-content {
+
+					.location {
+						display: inline-block;
+					}
+
+					.type-work {
+						margin-left: 5px;
+						padding-left: 9px;
+						border-left: 1px solid #666;
+						display: inline-block;
+						color: #666666;
+						font-size: 15px;
+					    font-family: 'Montserrat', sans-serif;
+					    font-weight: 400;
+					    line-height: 1.25em;
+
+					    &.full-time {
+					    	color: #cc66cc;
+					    }
+					}
+				}
+			}
+		}
+
+		#profile {
+			padding: 0 46px 108px 46px;
+			width: 100%;
+			box-shadow: 0 0 3px rgba(206, 206, 206, 0.36);
+			background: #fff;
+		}
+
+		#jobs {
+
+			.listing {
+				padding-bottom: 0;
+			}
+		}
+
+		#contact {
+			padding: 0 46px 108px 46px;
+			width: 100%;
+			box-shadow: 0 0 3px rgba(206, 206, 206, 0.36);
+			background: #fff;
+
+			p {
+				margin-bottom: 50px;
+			}
+
+			form {
+				margin-bottom: 0;
+
+				input,
+				textarea {
+					padding: 8px 20px;
+					height: 50px;
+					text-transform: uppercase;
+					font-size: 13px;
+					font-weight: 600;
+					color: #333;
+				}
+
+				input {
+					margin-bottom: 25px;
+				}
+
+				textarea {
+					padding: 8px 20px;
+					margin-bottom: 25px;
+					height: 312px;
+				}
+			}
+		}
+	}
+
+}
+
+.single-company-content {
+	padding: 45px 0 70px 0;
+
+	.listing {
+		padding-bottom: 0;
+
+		.listing-ver-3 {
+			margin-bottom: 30px;
+
+			.listing-inner {
+
+				.listing-content {
+
+					.location {
+						display: inline-block;
+					}
+
+					.type-work {
+						margin-left: 5px;
+						padding-left: 9px;
+						border-left: 1px solid #666;
+						display: inline-block;
+						color: #666666;
+						font-size: 15px;
+					    font-family: 'Montserrat', sans-serif;
+					    font-weight: 400;
+					    line-height: 1.25em;
+
+					    &.full-time {
+					    	color: #cc66cc;
+					    }
+					}
+
+					.details {
+						padding: 0;
+						margin: 30px 0 50px 0;
+
+						list-style: none;
+
+						li {
+							margin-bottom: 20px;
+							display: block;
+							text-align: left;
+
+							.fa {
+								color: #030104;
+							}
+
+							h6 {
+								margin: 0 0 0 5px;
+								display: inline-block;
+								text-transform: uppercase;
+								font-size: 15px;
+							}
+
+							span {
+								magin-top: 5px;
+								display: block;
+								color: #999999;
+								font-size: 14px;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.recruiter-info {
+		position: relative;
+		margin-bottom: 30px;
+		background: #fff;
+
+		.recruiter-header {
+			position: relative;
+			padding: 17px 24px;
+			background: #f0f0f0;
+			
+			h5 {
+				margin: 0;
+				color: #666;
+				display: inline-block;
+				font-size: 18px;
+			}
+
+			a {
+				margin-top: 3px;
+				float: right;
+				font-size: 21px;
+				color: #999;
+
+				&:hover {
+					color: @uou-primary-color;
+				}
+			}
+		}
+
+		.recruiter-inner {
+			position: relative;
+			padding: 38px 46px 32px 46px;
+
+			.recruiter-personal {
+
+				.recruiter-thumbnail {
+					margin-right: 21px;
+					width: 100px;
+					height: 100px;
+					display: inline-block;
+					vertical-align: top;
+
+					img {
+						width: 100%;
+						height: 100%;
+					}
+
+					@media (max-width: @screen-xs) {
+						margin-bottom: 10px;
+						width: 100%;
+						height: 100%;
+					}
+				}
+
+				.recruiter-details {
+					display: inline-block;
+					vertical-align: top;
+
+					.name {
+						margin: 0;
+						font-size: 18px;
+					}
+
+					.location {
+						margin-top: 2px;
+						margin-bottom: 14px;
+						display: block;
+						color: #999999;
+						font-weight: bold;
+						font-size: 14px;
+					}
+
+					ul {
+						padding: 0;
+						margin: 0;
+						list-style: none;
+
+						li {
+							display: block;
+							line-height: 20px;
+
+							span {
+								color: #666;
+								font-size: 14px;
+							}
+						}
+					}
+				}
+			}
+
+			.recruiter-contact {
+
+				@media (max-width: @screen-sm) {
+					text-align: left;
+				}
+
+				.social {
+					padding: 0;
+					margin: 0 0 32px 0;
+					list-style: none;
+
+					@media (max-width: @screen-sm) {
+						margin-top: 10px;
+						margin-bottom: 10px;
+					}
+
+					li {
+						display: inline-block;
+
+						&.facebook {
+
+							a {
+								background: #3b579d;
+							}
+						}
+
+						&.twitter {
+
+							a {
+								background: #5ea9dd;
+							}
+						}
+
+						&.google {
+
+							a {
+								background: #da5534;
+							}
+						}
+
+						a {
+							display: inline-block;
+							width: 28px;
+							height: 28px;
+							text-align: center;
+							line-height: 28px;
+							border-radius: 3px;
+
+							.fa {
+								color: #fff;
+							}
+						}
+					}
+				}
+
+				.btn {
+					padding-top: 6px;
+					padding-bottom: 6px;
+				}
+			}
+		}
+	}
+
+	.sidebar {
+		position: relative;
+		padding: 21px;
+		display: inline-block;
+		width: 100%;
+		background: #fff;
+		box-shadow: 0 0 3px rgba(206, 206, 206, 0.36);
+
+		@media(max-width: @screen-md) {
+			margin-bottom: 30px;
+		}
+
+		.sidebar-map {
+			width: 100%;
+			height: 100%;
+			padding: 4px;
+			border: 1px solid #eaeaea;
+
+			#single-company-map {
+				width: 100%;
+				height: 210px;
+			}
+		}
+
+		.sidebar-thumbnail {
+			margin: 0 auto 30px auto;
+			padding: 4px;
+			text-align: center;
+			border: 1px solid #eaeaea;
+
+			img {
+				margin: 0 auto;
+				display: inline-block;
+				max-width: 100%;
+				height: auto;
+			}
+		}
+
+		.sidebar-information {
+			position: relative;
+
+			.main-title {
+				margin: 30px 0 0 0;
+				padding-bottom: 13px;
+				font-size: 17px;
+				border-bottom: 1px solid #ccc;
+			}
+
+			.single-category {
+				position: relative;
+
+				.title {
+					margin: 25px 0 5px 0;
+					font-size: 15px;
+				}
+
+				.subtitle {
+					display: block;
+					color: #999999;
+				}
+
+				.social {
+					padding: 5px 0 0 0;
+					margin: 0;
+					list-style: none;
+
+					li {
+						margin-bottom: 5px;
+						margin-right: 3px;
+						display: inline-block;
+
+						&.twitter {
+
+							a {
+								background: #1bb2e9;
+							}
+						}
+
+						&.facebook {
+
+							a {
+								background: #3c599f;
+							}
+						}
+
+						&.google-plus {
+
+							a {
+								background: #df4b38;
+							}
+						}
+
+						&.linkedin {
+
+							a {
+								background: #4d7abc;
+							}
+						}
+
+						&.pinterest {
+
+							a {
+								background: #cb2027;
+							}
+						}
+
+						&.envelope {
+
+							a {
+								background: #999999;
+							}
+						}
+
+						a {
+							display: inline-block;
+							width: 29px;
+							height: 29px;
+							line-height: 29px;
+							text-align: center;
+							color: #fff;
+							border-radius: 50%;
+						}
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,58 @@
+/* UOU Accordions */
+/* ======================== */
+
+.uou-accordions {
+  .clearfix();
+  .list-unstyled();
+  position: relative;
+  margin: 0 0 @uou-line-height;
+
+  > li {
+    > a {
+      position: relative;
+      display: block;
+      background: @uou-tertiary-color;
+      color: @uou-text-color;
+      padding: round(@uou-line-height * .333) @uou-line-height;
+      margin-bottom: 5px;
+
+      &:after {
+        position: absolute;
+        right: @uou-line-height / 2;
+        top: round(@uou-line-height * .333);
+        content: @fa-var-chevron-right;
+        font-family: 'FontAwesome';
+        color: inherit;
+        font-size: @uou-font-size-small;
+      }
+
+      &:hover {
+        background: @uou-tertiary-color-hover;
+        outline: 0;
+      }
+    }
+
+    > div {
+      display: none;
+      position: relative;
+      background: @uou-tertiary-color;
+      padding: @uou-line-height;
+      margin-bottom: 5px;
+    }
+
+    &.active {
+      > a {
+        color: @uou-text-color-inverted;
+        background: @uou-primary-color;
+
+        &:after {
+          content: @fa-var-chevron-down;
+        }
+      }
+
+      > div {
+        display: block;
+      }
+    }
+  }
+}

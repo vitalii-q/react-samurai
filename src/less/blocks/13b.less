@@ -1,0 +1,72 @@
+/* Block 13b */
+/* ======================== */
+
+.uou-block-13b {
+  position: relative;
+  display: block;
+  background: @uou-tertiary-color;
+
+  .secondary& {
+    background: @uou-secondary-color;
+  }
+
+  h5 {
+    margin: 0;
+    padding: (@uou-line-height / 2) @uou-line-height;
+    font-size: @uou-font-size-h6;
+    background: @uou-secondary-color;
+    color: @uou-text-color-inverted;
+
+    .secondary& {
+      background: darken(@uou-secondary-color, 7.5%);
+    }
+  }
+
+  > ul {
+    .list-unstyled();
+    margin: 0;
+
+    > li {
+      position: relative;
+      padding: (@uou-line-height / 2) @uou-line-height;
+      border-bottom: 1px solid @uou-tertiary-color-hover;
+
+      &:last-child {
+        border-bottom: 0;
+      }
+
+      .secondary& {
+        border-bottom-color: darken(@uou-secondary-color, 7.5%);
+      }
+
+      h6 {
+        margin: 0;
+        line-height: 1.5em;
+        font-size: @uou-font-size-small;
+
+        .secondary& {
+          color: @uou-text-color-inverted;
+        }
+
+        a {
+          color: inherit;
+
+          &:hover {
+            color: @uou-primary-color;
+          }
+        }
+      }
+
+      .time-ago {
+        display: block;
+        text-transform: uppercase;
+        color: @uou-text-color-light;
+        font-size: round(@uou-font-size * .625);
+
+        .secondary& {
+          color: @uou-text-color-lighter;
+        }
+      }
+    }
+  }
+}

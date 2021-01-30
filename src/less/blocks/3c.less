@@ -1,0 +1,86 @@
+/* Block 3c */
+/* ======================== */
+
+.uou-block-3c {
+  .clearfix();
+  position: relative;
+  display: block;
+  padding: (@uou-line-height * 1.5) 0;
+  background: @uou-tertiary-color;
+  text-align: center;
+
+  .secondary& {
+    background: @uou-secondary-color;
+
+    &.has-bg-image {
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+  }
+
+  h1 {
+    position: relative;
+    margin: 0 0 @uou-line-height 0;
+    padding: 0 0 @uou-line-height 0;
+    font-size: @uou-font-size-h3;
+
+    .secondary& {
+      color: @uou-text-color-inverted;
+
+
+    }
+
+    &:after {
+      position: absolute;
+      content: '';
+      bottom: 0;
+      left: 50%;
+      margin-left: -30px;
+      display: block;
+      height: 1px;
+      width: 60px;
+      background: @uou-text-color-lighter;
+    }
+  }
+
+  .breadcrumbs {
+    vertical-align: top;
+    display: inline-block;
+    margin: 0;
+    font-size: @uou-font-size-small;
+
+    .secondary& {
+      > li {
+        color: @uou-text-color-inverted;
+
+        &:after {
+          color: @uou-text-color-light;
+        }
+
+        a {
+          color: @uou-text-color-lighter;
+
+          &:hover {
+            color: @uou-primary-color;
+          }
+        }
+      }
+    }
+  }
+
+  @media (max-width: @screen-xs-max) {
+    h1 {
+      position: relative;
+      margin: 0;
+      padding: 0;
+
+      &:after {
+        display: none;
+      }
+    }
+
+    .breadcrumbs {
+      display: none;
+    }
+  }
+}

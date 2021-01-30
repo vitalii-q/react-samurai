@@ -1,0 +1,95 @@
+/* Block 2d */
+/* ======================== */
+
+.uou-block-2d {
+  .clearfix();
+  position: relative;
+  display: block;
+  padding: @uou-line-height 0;
+  text-align: center;
+  font-family: @uou-font-family-sb;
+
+
+  .container {
+    position: relative;
+  }
+
+  .logo {
+    display: inline-block;
+    font-size: round(@uou-font-size * 1.75);
+    color: inherit;
+    font-weight: 700;
+    letter-spacing: 2px;
+    line-height: round(@uou-line-height * 1.666);
+    text-transform: uppercase;
+    padding: (@uou-line-height / 2) @uou-line-height;
+
+    .banner& {
+      line-height: 90px;
+    }
+
+    &:hover {
+      border-color: @uou-primary-color;
+      color: @uou-primary-color;
+    }
+  }
+
+  .mobile-sidebar-button {
+    display: none;
+  }
+
+  .contact {
+    position: absolute;
+    top: 0;
+    left: 0;
+    line-height: round(@uou-line-height * 2.916);
+    font-size: @uou-font-size-small;
+
+    span {
+      color: @uou-secondary-color;
+      font-weight: 600;
+    }
+
+    a {
+      color: @uou-text-color-light;
+
+      &:hover {
+        color: @uou-primary-color;
+      }
+    }
+  }
+
+  .cart {
+    position: absolute;
+    top: 0;
+    right: 0;
+    line-height: round(@uou-line-height * 2.916);
+    font-size: @uou-font-size-small;
+    color: @uou-text-color;
+
+    .fa {
+      color: @uou-secondary-color;
+      transition: all @uou-transition-speed;
+      font-size: @uou-font-size-large;
+      margin-right: 5px;
+    }
+
+    &:hover,
+    &:hover .fa {
+      color: @uou-primary-color;
+    }
+  }
+
+  @media (max-width: @screen-sm-max) {
+    .mobile-sidebar-button {
+      display: block;
+      float: right;
+      margin-top: (@uou-line-height / 2) + 3;
+    }
+
+    .contact,
+    .cart {
+      display: none;
+    }
+  }
+}

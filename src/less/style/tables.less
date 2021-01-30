@@ -1,0 +1,120 @@
+/* Tables */
+/* ======================== */
+
+table {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: @uou-line-height;
+  background-color: @uou-background-color;
+
+  table {
+    background-color: @uou-background-color;
+  }
+
+  th {
+    text-align: left;
+  }
+
+  > thead,
+  > tbody,
+  > tfoot {
+    > tr {
+      > th,
+      > td {
+        padding: round(@uou-line-height * .333) @uou-line-height;
+        line-height: @uou-line-height;
+        vertical-align: top;
+        border-bottom: 1px solid @uou-tertiary-color;
+      }
+    }
+  }
+
+  > caption + thead,
+  > colgroup + thead,
+  > thead:first-child {
+    > tr:first-child {
+      > th,
+      > td {
+        border-bottom: 0;
+      }
+    }
+  }
+
+  > thead > tr > th {
+    color: @uou-text-color-inverted;
+    vertical-align: bottom;
+    background-color: @uou-primary-color;
+    font-weight: 600;
+  }
+
+  > tfoot > tr {
+    > td,
+    > th {
+      background-color: @uou-tertiary-color;
+      font-weight: 600;
+    }
+  }
+
+  > tbody + tbody {
+    border-top: 2px solid @uou-tertiary-color;
+  }
+}
+
+/* Condensed */
+
+.table-condensed {
+  > thead,
+  > tbody,
+  > tfoot {
+    > tr {
+      > th,
+      > td {
+        padding: round(@uou-line-height * .125) (@uou-line-height / 2);
+        font-size: @uou-font-size-small;
+      }
+    }
+  }
+}
+
+/* Bordered */
+
+.table-bordered {
+  > thead,
+  > tbody,
+  > tfoot {
+    > tr {
+      > th,
+      > td {
+        border: 1px solid @uou-tertiary-color;
+      }
+    }
+  }
+
+  > thead > tr {
+    > th,
+    > td {
+      border: 0;
+    }
+  }
+}
+
+/* Stripped */
+
+.table-striped {
+  > tbody > tr:nth-child(odd) {
+    background-color: lighten(@uou-tertiary-color, 2.5%);
+  }
+}
+
+/* Hover */
+
+.table-hover {
+  > tbody > tr {
+    transition: all @uou-transition-speed;
+
+    &:hover {
+      background-color: @uou-tertiary-color;
+    }
+  }
+}

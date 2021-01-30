@@ -1,0 +1,65 @@
+/* Block 7a */
+/* ======================== */
+
+.uou-block-7a {
+  .clearfix();
+  position: relative;
+  display: block;
+
+  .css-table-cell {
+    width: 50%;
+  }
+
+  .slider {
+    .flexslider,
+    .slides,
+    .slides > li {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .content {
+    padding: @uou-line-height * 2;
+    background: @uou-tertiary-color;
+    text-align: center;
+    font-size: @uou-font-size-small;
+
+    .secondary& {
+      background: @uou-secondary-color;
+      color: @uou-text-color-lighter;
+
+      p {
+        color: @uou-text-color-inverted;
+      }
+    }
+
+    img {
+      border-radius: 4px;
+    }
+
+    h1 {
+      font-size: @uou-font-size-h5;
+      text-transform: uppercase;
+
+      .secondary& {
+        color: @uou-text-color-inverted;
+      }
+    }
+  }
+
+  @media (max-width: @screen-xs-max) {
+    .css-table-cell {
+      display: block;
+      width: 100%;
+    }
+
+    .slider {
+      .flexslider,
+      .slides,
+      .slides > li {
+        min-height: 250px;
+      }
+    }
+  }
+}

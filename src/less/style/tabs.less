@@ -1,0 +1,149 @@
+/* UOU Tabs */
+/* ======================== */
+
+.uou-tabs {
+  position: relative;
+  margin: 0 0 @uou-line-height;
+
+  .tabs {
+    .clearfix();
+    .list-unstyled();
+    margin: 0;
+
+    .vertical& {
+      float: left;
+      width: 160px;
+    }
+
+    li {
+      position: relative;
+      float: left;
+      margin-right: 5px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+
+      a {
+        display: block;
+        border: 3px solid transparent;
+        color: @uou-text-color;
+        padding: round(@uou-line-height * .333) @uou-line-height;
+
+        &:hover {
+
+          outline: 0;
+          color: @uou-primary-color;
+        }
+      }
+
+      &.active {
+        a {
+          color: @uou-text-color;
+          background: @uou-tertiary-color;
+          border: 3px solid @uou-tertiary-color;
+          border-top-color: @uou-primary-color;
+        }
+      }
+
+      .vertical& {
+        float: none;
+        margin-right: 0;
+        margin-bottom: 5px;
+
+          &.active {
+          a {
+            border-left-color: @uou-primary-color;
+            border-top-color: @uou-tertiary-color;
+          }
+        }
+      }
+    }
+  }
+
+  .content {
+    border-top: 3px solid @uou-tertiary-color;
+
+    > div {
+      display: none;
+      position: relative;
+
+      padding: @uou-line-height;
+
+      &.active {
+        display: block;
+      }
+    }
+
+    .vertical& {
+      margin-left: 160px;
+      border-top: 0;
+      border-left: 3px solid @uou-tertiary-color;
+
+
+    }
+  }
+
+  .accordion-link {
+    display: none;
+    background: @uou-tertiary-color;
+    color: @uou-text-color;
+    padding: round(@uou-line-height * .333) @uou-line-height;
+    margin-bottom: 5px;
+    transition: all 0s;
+
+    &:hover {
+      background: @uou-tertiary-color-hover;
+      outline: 0;
+    }
+
+    &.active {
+      color: @uou-text-color-inverted;
+      background: @uou-secondary-color;
+    }
+  }
+
+  // Accordion media queries
+  .accordion-toggle() {
+    .tabs {
+      display: none;
+    }
+
+    .accordion-link {
+      display: block;
+    }
+
+    .content {
+      border: 0;
+      margin: 0;
+
+      > div {
+        margin-bottom: 5px;
+      }
+    }
+  }
+
+  @media (max-width: @screen-xs-max) {
+    &.accordion-xs {
+      .accordion-toggle();
+    }
+  }
+
+  @media (min-width: @screen-sm-min) and (max-width: @screen-sm-max) {
+    &.accordion-sm {
+      .accordion-toggle();
+    }
+  }
+
+  @media (min-width: @screen-md-min) and (max-width: @screen-md-max) {
+    &.accordion-md {
+      .accordion-toggle();
+    }
+  }
+
+  @media (min-width: @screen-lg-min) {
+    &.accordion-lg {
+      .accordion-toggle();
+    }
+  }
+}

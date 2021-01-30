@@ -1,0 +1,118 @@
+/* Pagination */
+/* ======================== */
+
+.pagination {
+  .clearfix();
+  .list-unstyled();
+  position: relative;
+  margin-bottom: @uou-line-height;
+
+  > li {
+    float: left;
+    margin-right: 1px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    > a,
+    > span {
+      display: block;
+      min-width: round(@uou-line-height * 1.25);
+      height: round(@uou-line-height * 1.25);
+      line-height: round(@uou-line-height * 1.25);
+      padding-left: round(@uou-line-height / 3);
+      padding-right: round(@uou-line-height / 3);
+      text-align: center;
+      color: @uou-secondary-color;
+
+      .fa {
+        position: relative;
+        font-size: @uou-font-size-icon;
+        top: -1px;
+      }
+    }
+
+    > a {
+      &:hover {
+        background: @uou-primary-color;
+        color: @uou-text-color-inverted;
+      }
+    }
+
+    &.active {
+      > a,
+      > span {
+        cursor: default;
+        color: @uou-text-color-inverted;
+        background: @uou-secondary-color;
+      }
+    }
+  }
+}
+
+/* Pagination Secondary */
+
+.pagination-secondary {
+  .clearfix();
+  .list-unstyled();
+  position: relative;
+  margin-bottom: @uou-line-height;
+
+  > li {
+    float: left;
+    margin-right: 1px;
+
+    &:first-child {
+      margin-right: round(@uou-line-height / 3);
+
+      .fa {
+        margin-right: 5px;
+      }
+    }
+
+    &:last-child {
+      margin-right: 0;
+      margin-left: round(@uou-line-height / 3);
+
+      .fa {
+        margin-left: 5px;
+      }
+    }
+
+    > a,
+    > span {
+      display: block;
+      min-width: round(@uou-line-height * 1.25);
+      height: round(@uou-line-height * 1.25);
+      line-height: round(@uou-line-height * 1.25);
+      padding-left: round(@uou-line-height / 3);
+      padding-right: round(@uou-line-height / 3);
+      text-align: center;
+      color: @uou-secondary-color;
+      background: @uou-tertiary-color;
+
+      .fa {
+        position: relative;
+        font-size: @uou-font-size-icon;
+        top: -1px;
+      }
+    }
+
+    > a {
+      &:hover {
+        background: @uou-primary-color;
+        color: @uou-text-color-inverted;
+      }
+    }
+
+    &.active {
+      > a,
+      > span {
+        cursor: default;
+        color: @uou-text-color-inverted;
+        background: @uou-secondary-color;
+      }
+    }
+  }
+}

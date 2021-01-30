@@ -1,0 +1,56 @@
+/* Block 6a */
+/* ======================== */
+
+.uou-block-6a {
+  .clearfix();
+  position: relative;
+  display: block;
+  text-align: center;
+  margin-bottom: @uou-grid-space;
+
+  img {
+    width: 100%;
+    height: auto;
+
+    .rounded& {
+      max-width: 250px;
+      border-radius: 50%;
+    }
+  }
+
+  h6 {
+    line-height: @uou-line-height;
+
+    span {
+      display: block;
+      font-weight: normal;
+      font-size: @uou-font-size-small;
+      color: @uou-text-color-lighter;
+      letter-spacing: 1px;
+    }
+  }
+
+  .social-icons {
+    .list-unstyled();
+    margin-bottom: 0;
+
+    > li {
+      display: inline-block;
+      margin-right: @uou-line-height;
+
+      &:last-child {
+        margin-right: 0;
+      }
+
+      > a {
+        display: block;
+        color: inherit;
+        font-size: @uou-font-size-large;
+
+        &:hover {
+          color: @uou-primary-color;
+        }
+      }
+    }
+  }
+}

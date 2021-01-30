@@ -1,0 +1,77 @@
+/* Block 10a */
+/* ======================== */
+
+.uou-block-10a {
+  .clearfix();
+  position: relative;
+  display: block;
+  color: @uou-text-color-inverted;
+
+  .css-table {
+    padding: 50px 0;
+    min-height: 300px;
+  }
+
+  .css-table-cell {
+    &:first-child {
+      padding-right: 100px;
+    }
+  }
+
+  h3 {
+    font-size: @uou-font-size-h5;
+    color: inherit;
+    margin-top: 0;
+  }
+
+  p {
+    font-size: @uou-font-size-small;
+    color: @uou-tertiary-color;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .btn {
+    display: block;
+    min-width: 200px;
+
+    & + .btn {
+      margin-top: 15px;
+    }
+  }
+
+  @media (max-width: @screen-xs-max) {
+    .css-table {
+      padding: 50px 0 45px;
+      min-height: 0;
+    }
+
+    .css-table-cell {
+      display: block;
+      width: 100%;
+
+      &:first-child {
+        padding-right: 0;
+      }
+    }
+
+    p {
+      &:last-child {
+        margin-bottom: @uou-line-height;
+      }
+    }
+
+    .btn {
+      vertical-align: middle;
+      display: inline-block;
+      min-width: 200px;
+      margin-bottom: 5px;
+
+      & + .btn {
+        margin-top: 0;
+      }
+    }
+  }
+}

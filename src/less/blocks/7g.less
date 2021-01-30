@@ -1,0 +1,54 @@
+/* Block 7g */
+/* ======================== */
+
+.uou-block-7g {
+  .clearfix();
+  position: relative;
+  display: block;
+  text-align: center;
+  font-size: @uou-font-size-small;
+  margin-bottom: @uou-line-height;
+
+  &.blog {
+    background-color: #eaeaea;
+  }
+
+  .image {
+    width: 100%;
+    height: auto;
+  }
+
+  .badge {
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-transform: uppercase;
+    background: @uou-primary-color;
+    color: @uou-text-color-inverted;
+    padding: 0 (@uou-line-height / 3);
+    font-size: round(@uou-font-size * .75);
+    font-weight: 600;
+  }
+
+  .content {
+    padding: @uou-line-height;
+    border: 1px solid @uou-quaternary-color;
+    border-top: 0;
+  }
+
+  h1 {
+    margin-top: @uou-line-height / 2;
+    font-size: @uou-font-size-h5;
+  }
+
+  .date {
+    display: block;
+    text-transform: uppercase;
+    color: @uou-text-color-light;
+    font-size: round(@uou-font-size * .75);
+  }
+
+  p:last-child {
+    margin-bottom: 0;
+  }
+}

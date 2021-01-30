@@ -1,0 +1,51 @@
+/* Block 7h */
+/* ======================== */
+
+.uou-block-7h {
+  position: relative;
+  display: block;
+  text-align: center;
+
+  .caption {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: @uou-line-height * 2;
+    color: @uou-text-color-inverted;
+    text-shadow: 1px 1px 10px fadeout(@uou-secondary-color, 50%);
+
+    .time-ago {
+      display: block;
+      text-transform: uppercase;
+    }
+
+    h3 {
+      max-width: @screen-xs-max;
+      margin: 0 auto;
+      line-height: 1.5em;
+      color: inherit;
+
+      a {
+        color: inherit;
+
+        &:hover {
+          color: @uou-primary-color;
+        }
+      }
+    }
+  }
+
+  @media (max-width: @screen-xs-max) {
+    .caption {
+      .time-ago {
+        display: none;
+      }
+
+      h3 {
+        font-size: @uou-font-size-h5;
+      }
+    }
+  }
+}

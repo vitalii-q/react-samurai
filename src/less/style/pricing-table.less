@@ -1,0 +1,190 @@
+/* Tables */
+/* ======================== */
+
+.pricing-table {
+  position: relative;
+  width: 100%;
+  margin-bottom: @uou-line-height;
+
+  .column {
+    float: left;
+    width: 100%;
+    margin: 0 15px;
+
+    .columns-2& {
+      width: 100% / 2;
+    }
+
+    .columns-3& {
+      width: 100% / 3;
+    }
+
+    .columns-4& {
+      width: 100% / 4;
+    }
+
+    > header {
+
+      text-align: center;
+      padding: @uou-line-height 0;
+
+
+      h6 {
+        color: @uou-text-color;
+        margin: 0 0 (@uou-line-height * 2) 0;
+        text-transform: uppercase;
+        background-color: #fff;
+
+      }
+
+      .price {
+        font-size: @uou-font-size * 3;
+        color: @uou-text-color-inverted;
+        background: url("../img/pricing-table-bg.jpg") top center no-repeat;
+
+        &:before {
+          content: '$';
+          font-size: round(@uou-font-size * 1.5);
+          margin-right: 5px;
+        }
+
+        span {
+          margin-left: 5px;
+          font-size: @uou-font-size;
+          color: @uou-text-color-lighter;
+        }
+      }
+    }
+
+    > footer {
+      background: @uou-tertiary-color;
+      text-align: center;
+      padding: @uou-line-height 0;
+      border-right: 1px solid darken(@uou-tertiary-color, 5%);
+    }
+
+    > ul {
+      .list-unstyled();
+      margin: 0;
+      border-right: 1px solid darken(@uou-tertiary-color, 5%);
+
+      > li {
+        background: @uou-tertiary-color;
+        font-size: @uou-font-size-small;
+        padding: round(@uou-line-height / 3) 0;
+        text-align: center;
+        // color:
+
+        &:nth-last-child(odd) {
+          background: lighten(@uou-tertiary-color, 2.5%);
+        }
+
+        span {
+          color: @uou-secondary-color;
+          font-weight: 600;
+        }
+      }
+    }
+
+    &:last-child {
+      > header,
+      > footer,
+      > ul {
+        border-right: 0;
+      }
+    }
+  }
+
+  @media (max-width: @screen-sm-max) {
+    .column {
+      .columns-4& {
+        width: 100% / 2;
+      }
+    }
+  }
+
+  @media (max-width: @screen-sm-max) {
+    .column {
+      .columns-2&,
+      .columns-3&,
+      .columns-4&,
+      .columns-5& {
+        width: 100%;
+      }
+    }
+  }
+}
+
+
+
+
+.pricing-table {
+  position: relative;
+  .text-center;
+  border: 3px solid @uou-tertiary-color;
+  border-radius: 3px;
+  cursor: pointer;
+  margin: 40px auto;
+
+  @media (max-width: @screen-sm) {
+    width: 270px;
+  }
+
+  @media (max-width: @screen-lg) {
+    width: 270px;
+  }
+
+  h3 {
+    display: block;
+    margin: 0;
+    padding: 20px 0;
+    font-size: @font-size-h4;
+    border-bottom: 3px solid @uou-tertiary-color;
+  }
+
+  .price {
+    margin: 1px;
+    position: relative;
+    padding: 50px 0 40px;
+    font-size: @font-size-h1 + 15px;
+     background: url("../img/pricing-table-bg.jpg") top center no-repeat;
+     color: #fff;
+
+
+    b {
+      font-size: 13px;
+      display: block;
+      padding-top: 5px;
+      .text-capitalize;
+      font-weight: normal;
+
+    }
+  }
+
+  ul {
+    margin: 0;
+    padding: 40px 0;
+    list-style: none;
+    border-top: 3px solid @uou-tertiary-color;
+    border-bottom:  3px solid @uou-tertiary-color;
+
+    li {
+      padding: 10px 0;
+
+      font-size: @font-size-base + 1;
+
+      .fa {
+        padding-right: 8px;
+        font-size: @font-size-base;
+      }
+    }
+  }
+
+  .btn {
+    margin: 25px 0;
+
+  }
+
+
+}
+

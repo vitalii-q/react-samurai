@@ -1,0 +1,46 @@
+/* Block 9b */
+/* ======================== */
+
+.uou-block-9b {
+  .clearfix();
+  position: relative;
+  display: block;
+  margin-bottom: @uou-grid-space;
+
+  .image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100px;
+    height: auto;
+  }
+
+  .content {
+    padding-left: 100px + @uou-line-height;
+    min-height: 100px;
+
+    h4 {
+      font-size: @uou-font-size-h6;
+      margin: 0;
+
+      a {
+        color: inherit;
+
+        &:hover {
+          color: @uou-primary-color;
+        }
+      }
+    }
+
+    .stars {
+      color: @uou-text-color-light;
+      margin-bottom: @uou-line-height / 4;
+    }
+
+    p {
+      margin-bottom: 0;
+      font-size: round(@uou-font-size * .75);
+      line-height: round(@uou-line-height * .75);
+    }
+  }
+}

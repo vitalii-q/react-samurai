@@ -1,0 +1,54 @@
+/* Block 4b */
+/* ======================== */
+
+.uou-block-4b {
+  .clearfix();
+  position: relative;
+  display: block;
+  padding: round(@uou-line-height * 2) 0;
+  background: @uou-tertiary-color;
+  color: @uou-text-color;
+  font-size: @uou-font-size-small;
+  text-align: center;
+
+  .secondary& {
+    background: @uou-secondary-color;
+    color: darken(@uou-background-color, 15%);
+  }
+
+  p {
+    margin-bottom: 0;
+
+    .fa-heart {
+      color: @uou-error-color;
+    }
+  }
+
+  .social-icons {
+    .list-unstyled();
+    display: inline-block;
+    margin-top: @uou-line-height * 2;
+    margin-bottom: 0;
+    vertical-align: top;
+
+    > li {
+      float: left;
+      margin-right: @uou-line-height;
+
+      &:last-child {
+        margin-right: 0;
+      }
+
+      > a {
+        display: block;
+        color: inherit;
+        font-size: @uou-font-size * 2;
+        color: @uou-text-color-light;
+
+        &:hover {
+          color: @uou-primary-color;
+        }
+      }
+    }
+  }
+}

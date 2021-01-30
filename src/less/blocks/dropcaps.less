@@ -1,0 +1,36 @@
+.dropcaps {
+  position: relative;
+
+  &.secondary {
+    &:first-letter {
+      background-color: @uou-secondary-color;
+      color: @uou-text-color-inverted;
+    }
+  }
+
+  &.primary {
+    &:first-letter {
+      background-color: @uou-primary-color;
+      color: @uou-text-color-inverted;
+    }
+  }
+
+  &.default {
+    &:first-letter {
+      background-color: transparent;
+      color: @uou-text-color;
+    }
+  }
+
+  &:first-child {
+     &:first-letter {
+      float: left;
+      font-size: 23px;
+      padding: 10px 17px;
+      margin: 3px 15px 0 0;
+      font-weight: bold;
+      border-radius: 3px;
+   }
+  }
+
+}

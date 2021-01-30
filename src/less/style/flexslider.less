@@ -1,0 +1,158 @@
+/* FLEXSLIDER */
+/* ======================== */
+
+.slides,
+.flex-control-nav,
+.flex-direction-nav {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.flexslider {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+
+  .slides {
+    .clearfix();
+
+    > li {
+      display: none;
+      -webkit-backface-visibility: hidden;
+    }
+
+    img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    html[xmlns] & {
+      display: block;
+    }
+
+    * html & {
+      height: 1%;
+    }
+  }
+}
+
+.flexslider {
+  position: relative;
+  zoom: 1;
+
+  .slides {
+    zoom: 1;
+  }
+}
+
+.flex-viewport {
+  max-height: 2000px;
+
+  .loading & {
+    max-height: 300px;
+  }
+}
+
+.flex-direction-nav {
+  display: block;
+  width: 100%;
+  margin: 0;
+
+  a {
+    display: block;
+    width: round(@uou-line-height * 2);
+    height: round(@uou-line-height * 2);
+    text-align: center;
+    font-size: round(@uou-font-size * 1.625);
+    background: fadeout(@uou-secondary-color, 50%);
+    line-height: round(@uou-line-height * 2);
+    color: @uou-text-color-inverted;
+
+    &:hover {
+      background: @uou-secondary-color;
+    }
+  }
+
+  .flex-next,
+  .flex-prev {
+    position: absolute;
+    top: 50%;
+    margin-top: -@uou-line-height;
+    z-index: 10;
+
+    &:before {
+      display: block;
+      font-family: 'FontAwesome';
+      line-height: round(@uou-line-height * 2);
+    }
+  }
+
+  .flex-prev {
+    left: 0;
+
+    &:before {
+      content: @fa-var-angle-left;
+    }
+  }
+
+  .flex-next {
+    right: 0;
+
+    &:before {
+      content: @fa-var-angle-right;
+    }
+  }
+
+  .flex-disabled,
+  .flex-disabled:hover {
+    cursor: default;
+    background: fadeout(@uou-secondary-color, 25%);
+    color: fadeout(@uou-text-color-inverted, 50%);
+  }
+}
+
+.flex-control-nav {
+  position: absolute;
+  left: 0;
+  bottom: 10px;
+  display: block;
+  width: 100%;
+  text-align: center;
+  line-height: 10px;
+  padding: 10px;
+  z-index: 10;
+
+  .flexslider:hover & {
+    // background: fadeout(@uou-text-color-inverted, 80%);
+  }
+
+  li {
+    display: inline-block;
+    line-height: 10px;
+    margin: 0 5px;
+    vertical-align: bottom;
+
+    a {
+      .uou-text-hide();
+      display: block;
+      width:10px;
+      height: 10px;
+      cursor: pointer;
+      text-decoration: none;
+      background: fadeout(@uou-primary-color, 50%);
+      border-radius: 50%;
+      background: @uou-text-color-inverted;
+
+      &:hover {
+        background: @uou-primary-color;
+      }
+
+      &.flex-active {
+        background: @uou-primary-color;
+        cursor: default;
+      }
+    }
+  }
+}

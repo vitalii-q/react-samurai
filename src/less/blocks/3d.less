@@ -1,0 +1,227 @@
+/* Block 3d */
+/* ======================== */
+
+.uou-block-3d {
+  .clearfix();
+  position: relative;
+  display: block;
+  padding: @uou-line-height 0;
+  background: @uou-tertiary-color;
+
+  .secondary& {
+    background: @uou-secondary-color;
+  }
+
+  .breadcrumbs-secondary {
+    float: left;
+    margin: 0;
+
+    > li {
+      margin-right: 0;
+      > a,
+      > span {
+        &:after {
+          right: -13px;
+          border-left-color: @uou-tertiary-color;
+        }
+
+        &:before {
+          right: -14px;
+        }
+
+        .arrow {
+          &:before {
+            border-bottom-color: @uou-tertiary-color;
+          }
+
+          &:after {
+            border-top-color: @uou-tertiary-color;
+          }
+        }
+      }
+
+      > a {
+        &:hover {
+          &:after {
+            border-left-color: @uou-primary-color;
+          }
+        }
+      }
+
+      > span {
+        &:after {
+          border-left-color:lighten(@uou-secondary-color, 20%);
+        }
+      }
+
+      .secondary& {
+        > a,
+        > span {
+          &:after {
+            border-left-color: @uou-secondary-color;
+          }
+
+          .arrow {
+            &:before {
+              border-bottom-color: @uou-secondary-color;
+            }
+
+            &:after {
+              border-top-color: @uou-secondary-color;
+            }
+          }
+        }
+
+        > a {
+          &:hover {
+            &:after {
+              border-left-color: @uou-primary-color;
+            }
+          }
+        }
+
+        > span {
+          border-color: @uou-background-color;
+          background-color: @uou-background-color;
+          color: @uou-secondary-color;
+
+          &:before,
+          &:after,
+          .arrow {
+            border-left-color: @uou-background-color;
+          }
+        }
+      }
+    }
+  }
+
+  .heading {
+    float: right;
+    margin: 0;
+    font-size: @uou-font-size-h5;
+    line-height: round(@uou-line-height * 1.25);
+
+    .secondary& {
+      color: @uou-text-color-inverted;
+    }
+  }
+
+  .contact {
+    float: right;
+    line-height: round(@uou-line-height * 1.25);
+    font-size: @uou-font-size-small;
+
+    span {
+      color: @uou-secondary-color;
+      font-weight: 600;
+
+      .secondary& {
+        color: @uou-text-color-inverted;
+      }
+    }
+
+    a {
+      color: @uou-text-color;
+
+      .secondary& {
+        color: @uou-text-color-lighter;
+      }
+
+      &:hover {
+        color: @uou-primary-color;
+      }
+    }
+  }
+
+  .cart {
+    float: right;
+    line-height: round(@uou-line-height * 1.25);
+    font-size: @uou-font-size-small;
+    color: @uou-text-color;
+
+    .secondary& {
+      color: @uou-background-color;
+    }
+
+    .fa {
+      color: @uou-secondary-color;
+      transition: all @uou-transition-speed;
+      font-size: @uou-font-size-large;
+      margin-right: 5px;
+
+      .secondary& {
+        color: @uou-text-color-inverted;
+      }
+    }
+
+    &:hover,
+    &:hover .fa {
+      color: @uou-primary-color;
+    }
+  }
+
+  .search-form {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    float: right;
+
+    input[type="text"] {
+      margin: 0;
+      background: none;
+      border-radius: @uou-border-radius-three;
+
+      .secondary& {
+        color: @uou-text-color-inverted;
+        border-color: @uou-text-color-lighter;
+      }
+
+      &:focus {
+        .secondary& {
+          border-color: @uou-text-color-inverted;
+        }
+
+        & + input[type="submit"] {
+          color: @uou-secondary-color;
+
+          .secondary& {
+            color: @uou-text-color-inverted;
+          }
+
+          &:hover {
+            color: @uou-primary-color;
+          }
+        }
+      }
+    }
+
+    input[type="submit"] {
+      position: absolute;
+      top: 0;
+      right: 0;
+      background: none;
+      border: 0;
+      width: round(@uou-line-height * 1.25);
+      height: round(@uou-line-height * 1.25);
+      padding: 0;
+      text-align: center;
+      line-height: round(@uou-line-height * 1.25);
+      font-family: 'FontAwesome';
+      font-size: @uou-font-size-small;
+      color: @uou-quaternary-color;
+      transition: all @uou-transition-speed;
+
+      .secondary& {
+        border-color: @uou-text-color-lighter;
+      }
+
+      &:hover {
+        color: @uou-primary-color;
+      }
+    }
+  }
+
+  @media (max-width: @screen-xs-max) {
+    display: none;
+  }
+}

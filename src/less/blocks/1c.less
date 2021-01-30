@@ -1,0 +1,73 @@
+/* Block 1c */
+/* ======================== */
+
+.uou-block-1c {
+  .clearfix();
+  position: relative;
+  display: block;
+  background: @uou-tertiary-color;
+
+  .logo {
+    float: left;
+    display: block;
+    font-size: round(@uou-font-size * 1.5);
+    text-transform: uppercase;
+    color: inherit;
+    font-weight: 700;
+    letter-spacing: 2px;
+    line-height: round(@uou-line-height * 2.5);
+    border-right: 1px solid @uou-tertiary-color-hover;
+    padding-right: @uou-line-height;
+
+    &:hover {
+      color: @uou-primary-color;
+    }
+  }
+
+  .search {
+    position: relative;
+    float: left;
+
+    form {
+      margin: 0;
+
+      input[type="text"] {
+        background: none;
+        border: 0;
+        margin: 0;
+        width: 300px;
+        height: (round(@uou-line-height * .666) * 2) + @uou-line-height + 4;
+        padding: round(@uou-line-height * .666) 0 round(@uou-line-height * .666) @uou-line-height;
+      }
+    }
+  }
+
+  .buttons {
+    .list-unstyled();
+    float: right;
+    border-left: 1px solid @uou-tertiary-color-hover;
+    margin: 0;
+
+    li {
+      float: left;
+      border-right: 1px solid @uou-tertiary-color-hover;
+
+      a {
+        display: block;
+        color: inherit;
+        width: round(@uou-line-height * 2.5);
+        height: round(@uou-line-height * 2.5);
+        line-height: round(@uou-line-height * 2.5);
+        text-align: center;
+
+        &:hover {
+          color: @uou-primary-color;
+        }
+      }
+    }
+  }
+
+  @media (max-width: @screen-xs-max) {
+    display: none;
+  }
+}

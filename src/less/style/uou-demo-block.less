@@ -1,0 +1,268 @@
+.uou-demo-block {
+  position: relative;
+  width: 100%;
+  padding: 70px 0 40px;
+
+
+
+
+
+
+
+  &.zero-pb {
+    padding-bottom: 0;
+  }
+
+  &.tertiary {
+    background-color: @uou-tertiary-color;
+  }
+
+  h2.block-title {
+    .text-center;
+    font-size: @uou-font-size-h1 + 10;
+    .text-uppercase;
+    margin-top: 0;
+    color: lighten(@uou-text-color-lighter, 20%);
+    margin-bottom: 5px;
+
+    &.invert {
+      color: @uou-text-color;
+    }
+
+    &.left {
+      text-align: left;
+    }
+  }
+
+  h1.block-title {
+    .text-center;
+    font-size: @uou-font-size-h1 + 40;
+    .text-uppercase;
+    margin-top: 0;
+    color: lighten(@uou-text-color-lighter, 20%);
+    margin-bottom: 5px;
+  }
+
+  .block-secondary-title {
+    .text-center;
+    font-family: @uou-font-family-liv;
+    font-style: italic;
+    color: @uou-text-color;
+    font-size: @uou-font-size + 2;
+    padding-bottom: 30px;
+
+    &.left {
+      text-align: left;
+    }
+
+    &.invert {
+      color: @uou-text-color-inverted;
+    }
+
+  }
+
+
+  .uou-block-5c {
+    blockquote {
+      p {
+        color: @uou-text-color;
+      }
+    }
+  }
+
+
+  .uou-service-square {
+    padding: 0;
+  }
+
+
+  .block-secondary-title-m {
+    .text-center;
+    font-family: @uou-font-family-sb;
+    .text-uppercase;
+    color: @uou-text-color;
+    font-size: @uou-font-size - 4;
+    padding-bottom: 30px;
+
+    &.left {
+      text-align: left;
+    }
+
+
+
+    &.invert {
+      color: @uou-text-color-inverted;
+    }
+
+  }
+
+
+
+  .portfolio,
+  #portfolio {
+    padding: 0;
+  }
+
+
+
+  .uou-block-5b {
+    p {
+      color: @uou-text-color;
+    }
+  }
+
+
+  .demo-contact-form {
+    position: relative;
+    text-align: center;
+
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 500px;
+
+    &.invert {
+      input,
+      textarea {
+        background: transparent;
+        margin-bottom: 30px;
+        color: @uou-text-color !important;
+        border-color: @uou-text-color-light;
+      }
+
+      textarea {
+        height: 120px;
+        resize: none;
+        overflow: auto;
+      }
+    }
+
+    input,
+    textarea {
+      background: transparent;
+      margin-bottom: 30px;
+      color: @uou-text-color-inverted !important;
+    }
+
+    textarea {
+      height: 120px;
+      resize: none;
+      overflow: auto;
+    }
+  }
+
+
+  .uou-map-section {
+    height: 300px;
+  }
+
+
+
+  .round-counter-single {
+    h6 {
+      font-size: @uou-font-size-h6 - 5;
+    }
+  }
+
+
+
+  .address {
+    h2 {
+      margin-top: 0;
+    }
+  }
+
+
+
+  .pricing-table {
+    margin: 0 auto;
+
+    @media screen and (max-width: 991px ) {
+      margin: 40px auto;
+    }
+  }
+
+
+  .small-width-text  {
+    max-width: 500px;
+    font-size: @uou-font-size - 2;
+  }
+
+}
+
+.mobile-pic  {
+  width: 260px;
+  margin: 0 auto;
+}
+
+
+.sign {
+  width: 130px;
+  display: block;
+}
+
+
+.demo-img-custom {
+  width: 239px;
+      position: absolute;
+      top: -250px;
+      left: 20px;
+
+  @media screen and (max-width: 991px) {
+    display: none;
+  }
+
+}
+
+
+.copywrite-bg-image {
+  background: url("../img/copywrite-block-img1.png") top center no-repeat;
+
+  @media screen and (max-width: @screen-md) {
+    background: none;
+  }
+}
+
+
+
+
+
+.copywrite-header {
+  position: absolute;
+  width: 100%;
+  z-index: 99;
+  .uou-block-2d{
+    background-color: transparent;
+    padding: 20px 0;
+  }
+
+  @media (max-width: @screen-sm-max) {
+    padding: 10px 0;
+  }
+
+  .uou-block-2f {
+    background-color: transparent;
+    border-top: 1px solid @uou-text-color-inverted;
+    border-bottom: 1px solid @uou-text-color-inverted;
+
+    @media (max-width: @screen-sm-max) {
+      border: 0;
+    }
+
+    .border-right& {
+      margin-right: 0;
+
+      &:after {
+        position: absolute;
+        display: block;
+        content: '';
+        top: round(((@uou-line-height * 2.083) - @uou-font-size) / 2);
+        right: 0;
+        width: 1px;
+        height: round(@uou-font-size);
+        background: @uou-text-color-inverted;
+      }
+    }
+  }
+}
+
+

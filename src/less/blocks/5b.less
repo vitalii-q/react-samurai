@@ -1,0 +1,159 @@
+/* Block 5b */
+/* ======================== */
+
+.uou-block-5b {
+  .clearfix();
+  position: relative;
+  display: block;
+
+  blockquote {
+    .blockquote-unstyled();
+    display: none;
+    margin: 0 auto;
+    max-width: 800px;
+    text-align: center;
+    font-size: round(@uou-font-size * 1.5);
+    line-height: 1.5em;
+    font-family: @uou-font-family-liv;
+
+    &:before {
+      content: "\f10e";
+      font-weight: bold;
+      font-size: round(@uou-font-size * 2.5);
+      font-style: normal;
+      line-height: 1;
+      color: @uou-primary-color;
+      font-family: 'FontAwesome';
+
+    }
+
+    p {
+      padding-top: 50px;
+    }
+
+    footer {
+      display: none;
+      font-size: @uou-font-size-small;
+      color: @uou-text-color-lighter;
+
+      cite {
+        font-style: normal;
+        font-family: @uou-font-family;
+        letter-spacing: 1px;
+
+        a {
+          color: inherit;
+
+          &:hover {
+            color: @uou-primary-color;
+          }
+        }
+      }
+    }
+
+    &.active {
+      display: block;
+    }
+  }
+
+  .tabs {
+    .clearfix();
+    .list-unstyled();
+    text-align: center;
+
+    > li {
+      position: relative;
+      display: inline-block;
+      max-width: 100% / 4;
+      min-height: 80px;
+      padding-left: round(80 + @uou-line-height / 2);
+      padding-top: round((80 - (@uou-line-height * 2)) / 2);
+      color: @uou-text-color-light;
+      text-align: left;
+      margin-top: round(@uou-line-height * 2);
+      margin-right: @uou-grid-space;
+
+      &:last-child {
+        margin-right: 0;
+      }
+
+      img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 80px;
+        height: 80px;
+        border-radius: 4px;
+        opacity: .5;
+        transition: all @uou-transition-speed;
+      }
+
+      h6 {
+        color: inherit;
+        margin: 0;
+        line-height: @uou-line-height;
+        transition: all @uou-transition-speed;
+      }
+
+      a {
+        color: inherit;
+        font-size: @uou-font-size-small;
+        cursor: default;
+      }
+
+      &:hover {
+        img {
+          opacity: 1;
+        }
+      }
+
+      &.active {
+        img {
+          opacity: 1;
+        }
+
+        h6 {
+          color: @uou-secondary-color;
+        }
+
+        a:hover {
+          cursor: pointer;
+          color: @uou-primary-color;
+        }
+      }
+    }
+  }
+
+  @media (max-width: @screen-sm-max) and (min-width: @screen-sm-min) {
+    .tabs {
+      > li {
+        padding-left: 0;
+        padding-top: round((50 - (@uou-line-height * 2)) / 2);
+        text-align: center;
+
+        img {
+          position: relative;
+          top: auto;
+          left: auto;
+          width: 50px;
+          height: 50px;
+        }
+      }
+    }
+  }
+
+  @media (max-width: @screen-xs-max) {
+    blockquote {
+      display: block;
+      margin-bottom: @uou-line-height * 2;
+
+      footer {
+        display: block;
+      }
+    }
+
+    .tabs {
+      display: none;
+    }
+  }
+}

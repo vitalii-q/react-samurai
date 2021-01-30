@@ -1,0 +1,57 @@
+/* Block 10b */
+/* ======================== */
+
+.uou-block-10b {
+  .clearfix();
+  position: relative;
+  display: block;
+  padding: 50px 0;
+  background: @uou-secondary-color;
+  text-align: center;
+
+  h4 {
+    margin-top: 0;
+    margin-bottom: @uou-line-height / 2;
+    font-size: @uou-font-size-h6;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: @uou-text-color-inverted;
+  }
+
+  p {
+    font-size: @uou-font-size-small;
+    color: @uou-text-color-lighter;
+  }
+
+  form {
+    margin: 0;
+
+    input[type="email"] {
+      margin-bottom: 0;
+      display: inline-block;
+      width: 300px;
+      vertical-align: middle;
+      background: none;
+      border-color: @uou-text-color-lighter;
+      margin-right: 10px;
+      color: @uou-text-color-inverted;
+
+      &:focus {
+        border-color: @uou-tertiary-color;
+      }
+
+      .uou-placeholder(@uou-text-color-lighter);
+    }
+  }
+
+  @media (max-width: @screen-xs-max) {
+    form {
+      input[type="email"] {
+        margin-bottom: @uou-line-height / 2;
+        display: block;
+        width: 100%;
+        margin-right: 0;
+      }
+    }
+  }
+}

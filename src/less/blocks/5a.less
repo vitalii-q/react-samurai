@@ -1,0 +1,256 @@
+/* Block 5a */
+/* ======================== */
+
+.uou-block-5a {
+  .clearfix();
+  position: relative;
+  display: block;
+  padding: round(@uou-line-height * 3) 0;
+  background: @uou-secondary-color;
+  background-size: cover;
+
+  blockquote {
+    .blockquote-unstyled();
+    margin: 0 auto;
+    max-width: 800px;
+    text-align: center;
+    color: @uou-text-color-inverted;
+    font-size: round(@uou-font-size * 1.5);
+    line-height: 1.5em;
+    font-weight: normal;
+    font-family: @uou-font-family-liv;
+
+
+    footer {
+      display: block;
+      font-size: @uou-font-size-small;
+      color: @uou-text-color-inverted;
+
+      cite {
+        font-style: normal;
+        font-family: @uou-font-family;
+        letter-spacing: 1px;
+      }
+    }
+  }
+
+
+  &.uou-twitter-content {
+    background: @uou-text-color-inverted;
+    padding: 105px 0 60px;
+
+    &.has-bg-image {
+
+      &.invert {
+
+        .flex-control-nav {
+          text-align: right;
+          bottom: 25px;
+
+          li {
+
+
+
+            a{
+              background: @uou-text-color;
+
+              &.flex-active {
+                background: @uou-primary-color;
+              }
+            }
+          }
+
+
+        }
+
+        blockquote {
+          color: @uou-text-color !important;
+
+
+          .twitt-details {
+
+            border-top: 1px solid @uou-text-color;
+
+
+
+            p {
+              font-size: @uou-font-size - 4 ;
+              font-style: normal;
+              font-family: @uou-font-family;
+              font-weight: bold;
+
+
+
+              a {
+                margin: 0 10px;
+              }
+
+
+
+              span {
+                color: @uou-text-color;
+                margin-right: 10px;
+              }
+            }
+          }
+        }
+      }
+      blockquote {
+        color: @uou-text-color-inverted !important;
+
+
+        .twitt-details {
+
+          border-top: 1px solid @uou-text-color-inverted;
+
+
+
+          p {
+            font-size: @uou-font-size - 4 ;
+            font-style: normal;
+            font-family: @uou-font-family;
+            font-weight: bold;
+
+
+
+            a {
+              margin: 0 10px;
+            }
+
+
+
+            span {
+              color: @uou-text-color-inverted;
+              margin-right: 10px;
+            }
+          }
+        }
+      }
+    }
+
+    blockquote {
+      color: @uou-text-color-lighter !important;
+      .text-left;
+
+      ul {
+        li {
+          position: relative;
+
+          font-family: @uou-font-family-liv !important;
+          font-size: round(@uou-font-size * 1.7);
+          padding-left: 150px;
+          line-height: 40px;
+          padding-bottom: 50px;
+
+          @media screen and (max-width: @screen-sm) {
+            padding-left: 80px;
+
+          }
+
+          &:before {
+            content: "\f099";
+            font-family: 'FontAwesome';
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 120px;
+            width: 120px;
+            background: @uou-primary-color;
+            border-radius: 50%;
+            .text-center;
+            line-height: 120px;
+            color: @uou-text-color-inverted;
+            font-size: 35px;
+
+            @media screen and (max-width: @screen-sm) {
+              height: 60px;
+              width: 60px;
+              line-height: 60px;
+              font-size: 20px;
+
+            }
+          }
+
+          &:after {
+            content: " ";
+            position: absolute;
+            left: 98px;
+            top: 86px;
+            width: 15px;
+            height: 15px;
+            background-color: @uou-primary-color;
+            border-radius: 3px;
+
+            @media screen and (max-width: @screen-sm) {
+
+              left: 42px;
+                  top: 40px;
+
+            }
+
+
+          }
+
+          .twitt-details {
+            position: relative;
+            border-top: 1px solid @uou-tertiary-color;
+            margin-top: 10px;
+
+
+            p {
+              font-size: @uou-font-size - 4 ;
+              font-style: normal;
+              font-family: @uou-font-family;
+              font-weight: bold;
+
+
+
+              a {
+                margin: 0 10px;
+              }
+
+
+
+              span {
+                color: @uou-text-color;
+                margin-right: 10px;
+              }
+            }
+          }
+
+        }
+      }
+
+
+      .flex-control-nav {
+        text-align: right;
+        bottom: 25px;
+
+        li {
+
+
+
+          a{
+            border: 2px solid @uou-tertiary-color;
+            background: transparent;
+
+            &.flex-active {
+              border: 2px solid @uou-primary-color;
+              background: @uou-primary-color;
+            }
+          }
+        }
+
+
+      }
+
+
+
+      .flex-direction-nav {
+        display:none;
+      }
+    }
+
+
+  }
+}
